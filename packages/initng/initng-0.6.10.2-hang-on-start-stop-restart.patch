@@ -1,0 +1,285 @@
+--- /tmp/initng-0.6.10.2/plugins/ngc4/ngc4.c	2016-11-03 11:41:27.361691224 +0100
++++ ./plugins/ngc4/ngc4.c	2016-11-03 15:48:31.790497624 +0100
+@@ -57,7 +57,6 @@
+ 
+ int debug = FALSE;
+ 
+-int header_printed = FALSE;
+ int quiet = FALSE;
+ int ansi = FALSE;
+ 
+@@ -71,7 +70,7 @@ int ansi = FALSE;
+ #ifdef HAVE_NGE
+ active_row *service_starting_stopping = NULL;
+ 
+-static int service_change(char *service, e_is is, char *state)
++static int service_change(char command, char *service, e_is is, char *state)
+ {
+ 	if (strcmp(service_starting_stopping->name, service) != 0)
+ 	{
+@@ -82,19 +81,27 @@ static int service_change(char *service,
+ 	switch (is)
+ 	{
+ 		case IS_UP:
+-			printf("\r\nService \"%s\" is started!\r\n", service);
+-			/* Close the event socket, and ngclient_exec() should return */
+-			return (0);
++			print_out("Service \"%s\" is started!\r\n", service);
++			if (command == 'u' || command == 'r')
++			{
++				/* Close the event socket, and ngclient_exec() should return */
++				return (0);
++			}
++			break;
+ 		case IS_DOWN:
+-			printf("\r\nService \"%s\" have stopped!\r\n", service);
+-			/* Close the event socket, and ngclient_exec() should return */
+-			return (0);
++			print_out("Service \"%s\" is stopped!\r\n", service);
++			if (command == 'd')
++			{
++				/* Close the event socket, and ngclient_exec() should return */
++				return (0);
++			}
++			break;
+ 		case IS_FAILED:
+-			printf("\r\nService \"%s\" have failed!\r\n", service);
++			print_out("Service \"%s\" failed!\r\n", service);
+ 			/* Close the event socket, and ngclient_exec() should return */
+ 			return (0);
+ 		default:
+-			printf("\r\nService \"%s\" is now in state: %s\r\n", service, state);
++			print_out("Service \"%s\" is now in state: %s\r\n", service, state);
+ 	}
+ 
+ 	return (1);
+@@ -122,28 +129,22 @@ static int start_or_stop_command(reply *
+ 	switch (service_starting_stopping->is)
+ 	{
+ 		case IS_STARTING:
+-			print_out("Starting service \"%s\", hang on..\r\n",
+-					  service_starting_stopping->name);
++			print_out("Starting service \"%s\" ...\r\n", service_starting_stopping->name);
+ 			break;
+ 		case IS_STOPPING:
+-			print_out("Stopping service \"%s\", hang on..\r\n\r\n\r\n",
+-					  service_starting_stopping->name);
++			print_out("Stopping service \"%s\" ...\r\n", service_starting_stopping->name);
+ 			break;
+ 		case IS_DOWN:
+-			printf("Service %s is down.\r\n\r\n\r\n",
+-				   service_starting_stopping->name);
++			print_out("Service %s is down.\r\n", service_starting_stopping->name);
+ 			return (FALSE);
+-
+ 		case IS_UP:
+-			printf("Service %s is up.\r\n", service_starting_stopping->name);
++			print_out("Service %s is up.\r\n", service_starting_stopping->name);
+ 			return (FALSE);
+-
+ 		case IS_FAILED:
+-			printf("Service \"%s\" previously failed (%s),\r\nit needs to be zaped \"ngc -z %s\", so initng will forget the failing state before you are able to retry start it.\r\n", service_starting_stopping->name, service_starting_stopping->state, service_starting_stopping->name);
++			print_out("Service \"%s\" previously failed (%s),\r\nit needs to be zaped \"ngc -z %s\", so initng will forget the failing state before you are able to retry start it.\r\n", service_starting_stopping->name, service_starting_stopping->state, service_starting_stopping->name);
+ 			return (FALSE);
+ 		default:
+-			print_out("Service has state: %s\r\n",
+-					  service_starting_stopping->state);
++			print_out("Service has state: %s\r\n", service_starting_stopping->state);
+ 			return (FALSE);
+ 	}
+ 
+@@ -179,7 +180,8 @@ static int start_or_stop_command(reply *
+ 		{
+ 			case SERVICE_STATE_CHANGE:
+ 			case INITIAL_SERVICE_STATE_CHANGE:
+-				go = service_change(e->payload.service_state_change.service,
++				go = service_change(rep->result.c,
++									e->payload.service_state_change.service,
+ 									e->payload.service_state_change.is,
+ 									e->payload.service_state_change.
+ 									state_name);
+@@ -210,18 +212,13 @@ static int start_or_stop_command(reply *
+ }
+ #endif
+ 
+-static int send_and_handle(const char c, const char *l, const char *opt,
+-						   int instant)
++static int send_and_handle(const char c, const char *l, const char *opt, int wait)
+ {
+ 	char *string = NULL;
+ 	reply *rep = NULL;
+ 
+-
+-
+-
+ 	/*printf("send_and_handle(%c, %s, %s);\r\n", c, l, opt); */
+ 
+-
+ 	if (debug == TRUE)
+ 	{
+ 		rep = ngcclient_send_command(SOCKET_4_FILENAME_TEST, c, l, opt);
+@@ -243,32 +240,14 @@ static int send_and_handle(const char c,
+ 		return (FALSE);
+ 	}
+ 
+-
+-	/* print header if not printed before. */
+-	/* TODO, put initng version from rep here */
+-	if (header_printed == FALSE && quiet == FALSE)
+-	{
+-		/* print banner - only on terminal */
+-		if (ansi)
+-		{
+-			print_out(C_FG_LIGHT_BLUE " init" C_FG_LIGHT_RED "NGC"
+-					  C_FG_LIGHT_BLUE "ontrol (" C_FG_MAGENTA "%s"
+-					  C_FG_LIGHT_BLUE " )" C_OFF C_FG_LIGHT_RED
+-					  " by Jimmy Wennlund " C_OFF C_FG_NEON_GREEN
+-					  "http://www.initng.org/" C_OFF "\r\n", VERSION);
+-		}
+-		header_printed = TRUE;
+-	}
+-
+-
+ #ifdef HAVE_NGE
+-	if (instant == FALSE && quiet == FALSE)
++	if (wait == TRUE)
+ 	{
+ 		/*
+-		 * there are special commands, where we wanna 
+-		 * initziate nge, and follow the service.
++		 * there are special commands, where we want to
++		 * initiate nge, and follow the service.
+ 		 */
+-		if (rep->result.c == 'u' || rep->result.c == 'd')
++		if (rep->result.c == 'u' || rep->result.c == 'd' || rep->result.c == 'r')
+ 		{
+ 			return (start_or_stop_command(rep));
+ 		}
+@@ -279,7 +258,7 @@ static int send_and_handle(const char c,
+ 	if (quiet == FALSE)
+ 	{
+ 		string = ngcclient_reply_to_string(rep, ansi);
+-		print_out("\r\n\r\n%s\r\n", string);
++		print_out("%s\r\n", string);
+ 		if (string)
+ 			free(string);
+ 	}
+@@ -292,26 +271,18 @@ static int send_and_handle(const char c,
+ int main(int argc, char *argv[])
+ {
+ 	int i;
+-	int instant = FALSE;
++	int wait = FALSE;
+ 	int cc = 1;
+ 	char *Argv = NULL;
+ 
+ 	assert(argv[0]);
+ 
+ 	/*
+-	 * Only on first input from initng, we will print a
+-	 * initng header with version info, after then 
+-	 * header_printed is true, and probits this.
+-	 */
+-	header_printed = FALSE;
+-
+-	/*
+ 	 * If output to a terminal, turn on ansi colors.
+ 	 */
+ 	if (isatty(1))
+ 		ansi = TRUE;
+ 
+-
+ 	/*
+ 	 * Skip path in Argv.
+ 	 * example argv[0] == "/sbin/ngc" then Argv == "ngc"
+@@ -381,30 +352,28 @@ int main(int argc, char *argv[])
+ 			{
+ 				/* check if is a string or char */
+ 				if (Argv[4])
+-					return (send_and_handle
+-							('\0', &Argv[3], argv[1], instant));
++					return (send_and_handle('\0', &Argv[3], argv[1], wait));
+ 				else
+-					return (send_and_handle(Argv[3], NULL, argv[1], instant));
++					return (send_and_handle(Argv[3], NULL, argv[1], wait));
+ 			}
+ 			else
+ 			{
+ 				/* check if its a string or char */
+ 				if (Argv[3])
+-					return (send_and_handle
+-							('\0', &Argv[2], argv[1], instant));
++					return (send_and_handle('\0', &Argv[2], argv[1], wait));
+ 				else
+-					return (send_and_handle(Argv[2], NULL, argv[1], instant));
++					return (send_and_handle(Argv[2], NULL, argv[1], wait));
+ 			}
+ 		}
+ 
+ 		/* else call standard */
+-		return (send_and_handle('\0', Argv, argv[1], instant));
++		return (send_and_handle('\0', Argv, argv[1], wait));
+ 	}
+ 
+ 	/* make sure there are any arguments at all */
+ 	if (argc <= 1)
+ 	{
+-		send_and_handle('h', NULL, NULL, instant);
++		send_and_handle('h', NULL, NULL, wait);
+ 		exit(0);
+ 	}
+ 
+@@ -416,14 +385,14 @@ int main(int argc, char *argv[])
+ 		/* every fresh start needs a '-' char */
+ 		if (argv[cc][0] != '-')
+ 		{
+-			send_and_handle('h', NULL, NULL, instant);
++			send_and_handle('h', NULL, NULL, wait);
+ 			exit(1);
+ 		}
+ 
+ 		/* check that there is a char after the '-' */
+ 		if (!argv[cc][1])
+ 		{
+-			send_and_handle('h', NULL, NULL, instant);
++			send_and_handle('h', NULL, NULL, wait);
+ 			exit(1);
+ 		}
+ 
+@@ -436,10 +405,10 @@ int main(int argc, char *argv[])
+ 		if (argv[cc][1] == '-')
+ 		{
+ 
+-			/* handle local --instant */
+-			if (strcmp(&argv[cc][2], "instant") == 0)
++			/* handle local --wait */
++			if (strcmp(&argv[cc][2], "wait") == 0)
+ 			{
+-				instant = TRUE;
++				wait = TRUE;
+ 				cc++;
+ 				continue;
+ 			}
+@@ -452,12 +421,12 @@ int main(int argc, char *argv[])
+ 				continue;
+ 			}
+ 
+-			if (!send_and_handle('\0', &argv[cc][2], opt, instant))
++			if (!send_and_handle('\0', &argv[cc][2], opt, wait))
+ 				exit(1);
+ 		}
+ 		else
+ 		{
+-			if (!send_and_handle(argv[cc][1], NULL, opt, instant))
++			if (!send_and_handle(argv[cc][1], NULL, opt, wait))
+ 				exit(1);
+ 		}
+ 
+@@ -467,6 +436,6 @@ int main(int argc, char *argv[])
+ 
+ 
+ 	}
+-	print_out("\r\n\r\n");
++	print_out("\r\n");
+ 	exit(0);
+ }

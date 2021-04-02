@@ -1,0 +1,9 @@
+HOST_ZLIB_VERSION = 1.2.8
+HOST_ZLIB_SOURCE = host-zlib-$(HOST_ZLIB_VERSION)
+HOST_ZLIB_ARCHIVE = zlib-$(HOST_ZLIB_VERSION).tar.xz
+HOST_ZLIB_PATCH = 
+HOST_ZLIB_DEPENDENCIES = 
+
+HOST_ZLIB_MAKE = $(MAKE1)
+
+$(eval $(add-host-autotools-package))

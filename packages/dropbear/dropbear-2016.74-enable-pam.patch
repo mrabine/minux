@@ -1,0 +1,19 @@
+diff -rupN /tmp/dropbear-2016.74/options.h ./options.h
+--- /tmp/dropbear-2016.74/options.h	2016-07-21 17:17:09.000000000 +0200
++++ ./options.h	2016-08-19 19:16:09.933146264 +0200
+@@ -212,11 +212,11 @@ If you test it please contact the Dropbe
+  * You can't enable both PASSWORD and PAM. */
+ 
+ /* This requires crypt() */
+-#ifdef HAVE_CRYPT
+-#define ENABLE_SVR_PASSWORD_AUTH
+-#endif
++//#ifdef HAVE_CRYPT
++//#define ENABLE_SVR_PASSWORD_AUTH
++//#endif
+ /* PAM requires ./configure --enable-pam */
+-/*#define ENABLE_SVR_PAM_AUTH */
++#define ENABLE_SVR_PAM_AUTH
+ #define ENABLE_SVR_PUBKEY_AUTH
+ 
+ /* Whether to take public key options in 

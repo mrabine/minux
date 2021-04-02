@@ -1,0 +1,9 @@
+HOST_MKUSERS_VERSION = 1.0.4
+HOST_MKUSERS_SOURCE = host-mkusers-$(HOST_MKUSERS_VERSION)
+HOST_MKUSERS_ARCHIVE = mkusers-$(HOST_MKUSERS_VERSION).tar.xz
+HOST_MKUSERS_PATCH = 
+HOST_MKUSERS_DEPENDENCIES = 
+
+$(eval $(add-host-autotools-package))
+
+MKUSERS = $(HOST_DIR)/usr/bin/mkusers

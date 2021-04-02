@@ -1,0 +1,12 @@
+POPT_VERSION = 1.16
+POPT_SOURCE = $(POPT_NAME)-$(POPT_VERSION)
+POPT_ARCHIVE = $(POPT_SOURCE).tar.gz
+POPT_PATCH = 
+POPT_DEPENDENCIES = 
+
+POPT_INSTALL_STAGING = YES
+
+POPT_CONFIGURE_ARGS = \
+	ac_cv_va_copy=yes
+
+$(eval $(add-autotools-package))

@@ -1,0 +1,7 @@
+HOST_LZO_VERSION = 2.09
+HOST_LZO_SOURCE = host-lzo-$(HOST_LZO_VERSION)
+HOST_LZO_ARCHIVE = lzo-$(HOST_LZO_VERSION).tar.gz
+HOST_LZO_PATCH = 
+HOST_LZO_DEPENDENCIES = 
+
+$(eval $(add-host-autotools-package))

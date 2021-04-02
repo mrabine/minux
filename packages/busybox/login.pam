@@ -1,0 +1,10 @@
+# Dorale System, Inc.
+#
+# This is the PAM configuration file for login.
+#
+# Copyright (C) 2015 Dorale System, Inc.
+#
+auth     required pam_unix.so     
+account  required pam_unix.so
+password required pam_unix.so shadow md5 use_authtok
+session  required pam_unix.so

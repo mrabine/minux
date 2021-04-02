@@ -1,0 +1,146 @@
+diff -rupN /tmp/initng-0.6.10.2/CMakeLists.txt ./CMakeLists.txt
+--- /tmp/initng-0.6.10.2/CMakeLists.txt	2007-11-11 22:44:40.000000000 +0100
++++ ./CMakeLists.txt	2016-07-01 18:12:14.356529862 +0200
+@@ -130,7 +130,7 @@ IF(DEBUG)
+ 		SET(COREDUMPER_LIBS coredumper)
+ 	ENDIF(HAVE_COREDUMPER AND HAVE_COREDUMPER_H)
+ 
+-	SET(CMAKE_C_FLAGS "-DDEBUG -g -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -Wimplicit -Wredundant-decls -Wnested-externs -Wwrite-strings -Wsign-compare -Winline -Wswitch -Wreturn-type -Wparentheses -Wmissing-braces -Wformat -Wformat-nonliteral -Wformat-security -Wsequence-point -Wundef -Wunused -Wcomment ${CMAKE_C_FLAGS}")
++	SET(CMAKE_C_FLAGS "-DDEBUG -g -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -Wimplicit -Wredundant-decls -Wnested-externs -Wwrite-strings -Wsign-compare -Wswitch -Wreturn-type -Wparentheses -Wmissing-braces -Wformat -Wformat-nonliteral -Wformat-security -Wsequence-point -Wundef -Wunused -Wcomment ${CMAKE_C_FLAGS}")
+ ENDIF(DEBUG)
+ 
+ IF(COUNT_ME)
+diff -rupN /tmp/initng-0.6.10.2/plugins/logfile/initng_logfile.c ./plugins/logfile/initng_logfile.c
+--- /tmp/initng-0.6.10.2/plugins/logfile/initng_logfile.c	2015-10-27 16:18:32.222059831 +0100
++++ ./plugins/logfile/initng_logfile.c	2015-10-27 16:11:59.478042076 +0100
+@@ -71,7 +71,7 @@ static int program_output(s_event * even
+ 	filename_fixed = fix_variables(filename, data->service);
+ 
+ 	/* open the file */
+-	fd = open(filename, O_WRONLY | O_CREAT | O_APPEND);
++	fd = open(filename, O_WRONLY | O_CREAT | O_APPEND, 0644);
+ 	if (fd < 1)
+ 	{
+ 		F_("Error opening %s, err : %s\n", filename, strerror(errno));
+diff -rupN /tmp/initng-0.6.10.2/plugins/ngc4/libngcclient.c ./plugins/ngc4/libngcclient.c
+--- /tmp/initng-0.6.10.2/plugins/ngc4/libngcclient.c	2006-05-18 12:15:50.000000000 +0200
++++ ./plugins/ngc4/libngcclient.c	2015-08-19 18:33:44.019491000 +0200
+@@ -267,8 +267,6 @@ reply *ngcclient_send_command(const char
+ 	/* if there was a payload, download that too */
+ 	if (rep->result.payload > 0)
+ 	{
+-		ssize_t got = 0;
+-
+ 		/*printf("There is a payload.\n"); */
+ 
+ 		/* i allocate 1 byte extra, to be sure a null on the end */
+@@ -282,10 +280,7 @@ reply *ngcclient_send_command(const char
+ 		/* sleep a bit, to make sure initng filled the buffer */
+ 		usleep(50000);
+ 
+-		got = TEMP_FAILURE_RETRY(recv
+-								 (sock, rep->payload, rep->result.payload,
+-								  0));
+-		/* printf("got an payload of: %i bytes, suposed to be %i. #errno %i\n", got, rep->result.payload, errno); */
++		TEMP_FAILURE_RETRY(recv(sock, rep->payload, rep->result.payload, 0));
+ 	}
+ 
+ 
+diff -rupN /tmp/initng-0.6.10.2/plugins/service/initng_service.c ./plugins/service/initng_service.c
+--- /tmp/initng-0.6.10.2/plugins/service/initng_service.c	2007-01-10 23:36:32.000000000 +0100
++++ ./plugins/service/initng_service.c	2015-08-19 18:30:58.071488000 +0200
+@@ -706,12 +706,10 @@ static void handle_killed_stop(active_db
+ 	assert(service->current_state);
+ 	assert(service->current_state->state_name);
+ 	assert(process);
+-	int rcode;
+ 
+ 	D_("(%s);\n", service->name);
+ 
+ 	/* Free the process what ever happens below */
+-	rcode = process->r_code;
+ 	initng_process_db_free(process);
+ 
+ 
+diff -rupN /tmp/initng-0.6.10.2/plugins/suid/initng_suid.c ./plugins/suid/initng_suid.c
+--- /tmp/initng-0.6.10.2/plugins/suid/initng_suid.c	2015-10-27 16:18:32.202059830 +0100
++++ ./plugins/suid/initng_suid.c	2015-10-27 16:15:49.090052456 +0100
+@@ -123,7 +123,7 @@ static int do_suid(s_event * event)
+ 	if (gid)
+ 	{
+ 		D_("Change to gid %i", gid);
+-		setgid(gid);
++		(void)(setgid(gid) + 1);
+ 	}
+ 
+ 	if (passwd)
+@@ -132,7 +132,7 @@ static int do_suid(s_event * event)
+ 	if (uid)
+ 	{
+ 		D_("Change to uid %i", uid);
+-		setuid(uid);
++		(void)(setuid(uid) + 1);
+ 
+ 		/* Set UID-related env variables */
+ 		adjust_env(data->service, "USER", passwd->pw_name);
+diff -rupN /tmp/initng-0.6.10.2/tools/killalli5.c ./tools/killalli5.c
+--- /tmp/initng-0.6.10.2/tools/killalli5.c	2015-10-27 17:53:40.331975153 +0100
++++ ./tools/killalli5.c	2015-10-27 17:58:11.203987398 +0100
+@@ -29,6 +29,7 @@
+  *              as published by the Free Software Foundation; either version
+  *              2 of the License, or (at your option) any later version.
+  */
++#define _GNU_SOURCE
+ #include <sys/types.h>
+ #include <stdio.h>
+ #include <string.h>
+@@ -100,9 +101,6 @@ __attribute__ ((format(printf, 2, 3)))
+ #endif
+ 	 static void nsyslog(int pri, const char *fmt, ...);
+ 
+-
+-	 pid_t getsid(pid_t pid);
+-
+ /*
+  *      Malloc space, barf if out of memory.
+  */
+diff -rupN /tmp/initng-0.6.10.2/tools/sulogin.c ./tools/sulogin.c
+--- /tmp/initng-0.6.10.2/tools/sulogin.c	2015-10-27 16:18:32.186059829 +0100
++++ ./tools/sulogin.c	2015-10-27 16:33:18.620596135 +0100
+@@ -330,7 +330,7 @@ void sushell(struct passwd *pwd)
+ 	/*
+ 	 *      Set directory and shell.
+ 	 */
+-	(void) chdir(pwd->pw_dir);
++	(void) (chdir(pwd->pw_dir) + 1);
+ 	if ((p = getenv("SUSHELL")) != NULL)
+ 		sushell = p;
+ 	else if ((p = getenv("sushell")) != NULL)
+@@ -351,8 +351,7 @@ void sushell(struct passwd *pwd)
+ 	/*
+ 	 *      Set some important environment variables.
+ 	 */
+-	getcwd(home, sizeof(home));
+-	setenv("HOME", home, 1);
++	setenv("HOME", getcwd(home, sizeof(home)), 1);
+ 	setenv("LOGNAME", "root", 1);
+ 	setenv("USER", "root", 1);
+ 	if (!profile)
+@@ -458,14 +457,12 @@ int main(int argc, char **argv)
+ 				signal(SIGHUP, SIG_IGN);
+ 				ioctl(0, TIOCNOTTY, (char *) 1);
+ 				signal(SIGHUP, SIG_DFL);
+-				close(0);
+-				close(1);
+-				close(2);
++				close(STDERR_FILENO);
+ 				close(fd);
+ 				fd = open(tty, O_RDWR);
+ 				ioctl(0, TIOCSCTTY, (char *) 1);
+-				dup(fd);
+-				dup(fd);
++				dup2(fd, STDIN_FILENO);
++				dup2(fd, STDOUT_FILENO);
+ 			}
+ 			else
+ 				close(fd);

@@ -1,0 +1,140 @@
+diff -rupN /tmp/syslog-ng-3.8.1/modules/affile/affile-dest.c ./modules/affile/affile-dest.c
+--- /tmp/syslog-ng-3.8.1/modules/affile/affile-dest.c	2016-08-19 13:15:49.000000000 +0200
++++ ./modules/affile/affile-dest.c	2016-10-13 18:38:42.240520683 +0200
+@@ -187,6 +187,7 @@ affile_dw_reopen(AFFileDestWriter *self)
+                            ? log_proto_text_client_new(log_transport_pipe_new(fd), &self->owner->writer_options.proto_options.super)
+                            : log_proto_file_writer_new(log_transport_file_new(fd), &self->owner->writer_options.proto_options.super,
+                                                        self->owner->writer_options.flush_lines,
++                                                       self->owner->writer_options.flush_timeout,
+                                                        self->owner->use_fsync);
+ 
+       main_loop_call((void * (*)(void *)) affile_dw_arm_reaper, self, TRUE);
+diff -rupN /tmp/syslog-ng-3.8.1/modules/affile/logproto-file-writer.c ./modules/affile/logproto-file-writer.c
+--- /tmp/syslog-ng-3.8.1/modules/affile/logproto-file-writer.c	2016-08-19 13:15:49.000000000 +0200
++++ ./modules/affile/logproto-file-writer.c	2016-10-13 18:38:42.240520683 +0200
+@@ -28,6 +28,11 @@
+ #include <errno.h>
+ #include <sys/uio.h>
+ #include <unistd.h>
++#include <iv.h>
++#include <iv_work.h>
++
++#include "timeutils.h"
++#include "mainloop-call.h"
+ 
+ typedef struct _LogProtoFileWriter
+ {
+@@ -39,9 +44,30 @@ typedef struct _LogProtoFileWriter
+   gint fd;
+   gint sum_len;
+   gboolean fsync;
++  gint flush_timeout;
++  struct iv_timer flush_timer;
+   struct iovec buffer[0];
+ } LogProtoFileWriter;
+ 
++static void
++flush_timer_arm(LogProtoFileWriter *s)
++{
++  if(s->flush_timeout > 0 && !iv_timer_registered(&s->flush_timer))
++    {
++      iv_validate_now();
++      s->flush_timer.expires = iv_now;
++      timespec_add_msec(&s->flush_timer.expires, s->flush_timeout);
++      iv_timer_register(&s->flush_timer);
++    }
++}
++
++static void
++flush_timer_disarm(LogProtoFileWriter *s)
++{
++  if (iv_timer_registered(&s->flush_timer))
++    iv_timer_unregister(&s->flush_timer);
++}
++
+ /*
+  * log_proto_file_writer_flush:
+  *
+@@ -81,8 +107,10 @@ log_proto_file_writer_flush(LogProtoClie
+     }
+ 
+   /* we might be called from log_writer_deinit() without having a buffer at all */
+-  if (self->buf_count == 0)
+-    return LPS_SUCCESS;
++  if (self->buf_count == 0 || (!main_loop_is_main_thread() && iv_timer_registered(&self->flush_timer) && self->buf_count < self->buf_size))
++    {
++      return LPS_SUCCESS;
++    }
+ 
+   rc = writev(self->fd, self->buffer, self->buf_count);
+   if (rc > 0 && self->fsync)
+@@ -127,6 +155,9 @@ log_proto_file_writer_flush(LogProtoClie
+   self->buf_count = 0;
+   self->sum_len = 0;
+ 
++  if(!main_loop_is_main_thread())
++    main_loop_call((void * (*)(void *)) flush_timer_arm, self, TRUE);
++
+   return LPS_SUCCESS;
+ 
+  write_error:
+@@ -142,6 +173,13 @@ log_proto_file_writer_flush(LogProtoClie
+ 
+ }
+ 
++static void
++flush_timer_handler(gpointer s)
++{
++  LogProtoFileWriter *self = (LogProtoFileWriter *)s;
++  log_proto_file_writer_flush(&self->super);
++}
++
+ /*
+  * log_proto_file_writer_post:
+  * @msg: formatted log message to send (this might be consumed by this function)
+@@ -203,11 +241,18 @@ log_proto_file_writer_prepare(LogProtoCl
+   /* if there's no pending I/O in the transport layer, then we want to do a write */
+   if (*cond == 0)
+     *cond = G_IO_OUT;
+-  return self->buf_count > 0 || self->partial;
++  return (!iv_timer_registered(&self->flush_timer) && self->buf_count > 0) || self->partial;
++}
++
++void
++log_proto_file_writer_free(LogProtoClient *s)
++{
++  LogProtoFileWriter *self = (LogProtoFileWriter *) s;
++  main_loop_call((void * (*)(void *)) flush_timer_disarm, self, TRUE);
+ }
+ 
+ LogProtoClient *
+-log_proto_file_writer_new(LogTransport *transport, const LogProtoClientOptions *options, gint flush_lines, gint fsync_)
++log_proto_file_writer_new(LogTransport *transport, const LogProtoClientOptions *options, gint flush_lines, gint flush_timeout, gint fsync_)
+ {
+   if (flush_lines == 0)
+     /* the flush-lines option has not been specified, use a default value */
+@@ -225,8 +270,13 @@ log_proto_file_writer_new(LogTransport *
+   self->fd = transport->fd;
+   self->buf_size = flush_lines;
+   self->fsync = fsync_;
++  self->flush_timeout = flush_timeout;
+   self->super.prepare = log_proto_file_writer_prepare;
+   self->super.post = log_proto_file_writer_post;
+   self->super.flush = log_proto_file_writer_flush;
++  self->super.free_fn = log_proto_file_writer_free;
++  IV_TIMER_INIT(&self->flush_timer);
++  self->flush_timer.cookie = self;
++  self->flush_timer.handler = flush_timer_handler;
+   return &self->super;
+ }
+diff -rupN /tmp/syslog-ng-3.8.1/modules/affile/logproto-file-writer.h ./modules/affile/logproto-file-writer.h
+--- /tmp/syslog-ng-3.8.1/modules/affile/logproto-file-writer.h	2016-08-19 13:15:49.000000000 +0200
++++ ./modules/affile/logproto-file-writer.h	2016-10-13 18:38:42.240520683 +0200
+@@ -26,6 +26,6 @@
+ 
+ #include "logproto/logproto-client.h"
+ 
+-LogProtoClient *log_proto_file_writer_new(LogTransport *transport, const LogProtoClientOptions *options, gint flush_lines, gboolean fsync);
++LogProtoClient *log_proto_file_writer_new(LogTransport *transport, const LogProtoClientOptions *options, gint flush_lines, gint flush_timeout, gboolean fsync);
+ 
+ #endif

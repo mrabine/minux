@@ -1,0 +1,25 @@
+ZLIB_VERSION = 1.2.8
+ZLIB_SOURCE = $(ZLIB_NAME)-$(ZLIB_VERSION)
+ZLIB_ARCHIVE = $(ZLIB_SOURCE).tar.xz
+ZLIB_PATCH = 
+ZLIB_DEPENDENCIES =
+
+ZLIB_INSTALL_STAGING = YES
+
+ZLIB_MAKE = $(MAKE1)
+ZLIB_MAKE_OPTS = LDCONFIG=true
+
+define ZLIB_CONFIGURE_CMD
+	$(CD) $(ZLIB_DIR); rm -rf config.cache; \
+	$(TARGET_CONFIGURE_ARGS) \
+	CFLAGS="$(TARGET_CFLAGS) -fPIC" \
+		./configure \
+		--prefix=/usr \
+		--shared
+endef
+
+define ZLIB_INSTALL_TARGET_CMD
+	$(TARGET_MAKE_ARGS) $(ZLIB_MAKE) -C $(ZLIB_DIR) DESTDIR=$(TARGET_DIR) $(ZLIB_MAKE_OPTS) install
+endef
+
+$(eval $(add-autotools-package))

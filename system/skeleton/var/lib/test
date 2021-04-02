@@ -1,0 +1,1572 @@
+Sep  8 12:57:00 notice syslog-ng[233]: Configuration reload request received, reloading configuration;
+Sep  8 12:57:54 warning ALEOS_ALMS_LWM2M: Failed bootstrap, nothing left to do
+Sep  8 13:07:00 info syslog-ng[233]: Log statistics; processed='center(received)=298', processed='destination(d_messages)=298', processed='src.internal(s_system#1)=7', stamp='src.internal(s_system#1)=1473339420', processed='center(queued)=596', processed='source(s_system)=298', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=291', processed='global(sdata_updates)=0', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=298'
+Sep  8 13:07:10 info dropbear[9276]: Exit (root): Disconnect received
+Sep  8 13:10:04 notice ALEOS_WAN_linkmon: Current: RSSI=-72, RSRQ=-20, RSRP=-99, SINR=3.2
+Sep  8 13:17:00 info syslog-ng[233]: Log statistics; processed='center(received)=301', processed='destination(d_messages)=301', processed='src.internal(s_system#1)=8', stamp='src.internal(s_system#1)=1473340020', processed='center(queued)=602', processed='source(s_system)=301', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=294', processed='global(sdata_updates)=0', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=301'
+Jan  1 00:00:00 notice syslog-ng[198]: syslog-ng starting up; version='3.8.1'
+Jan  1 00:00:00 alert ALEOS_SYSTEM:    _   _   _   _   _      
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   / \ / \ / \ / \ / \     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:  | A | L | E | O | S |    
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   \_/ \_/ \_/ \_/ \_/     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Sierra Wireless       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Copyright 2009-2016 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Version: 4.8.0.P22 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Single Code-Set       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM: Serial no: LT53530069011025  
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: START
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: ALEOS time is set to Sat Jan  1 00:00:00 2000
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: END
+Jan  1 00:00:00 info ALEOS_SYSTEM_WDlog: Starting Monitor Process
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: HW Watchdog enabled. 
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: New HW Watchdog timeout: 240 seconds. 
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for SM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Storage Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for CSM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Storage Manager is now ready - Continue
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Configuration Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Initializing...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Hard-coded default configuration retrieved
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Requesting persisted user configuration...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Data reading done
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Persisted user configuration retrieved
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Default configuration already peristed in user configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Running...
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for LTE Radio
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs Serial Port
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Serial0    Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for GNSS
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: QualcommDM Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: No External Card Detected
+Jan  1 00:00:01 info ALEOS_SYSTEM: Check Reset Configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM: No reset backup configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_csmMigrator: csmMigrator: Migration complete.
+Jan  1 00:00:01 notice ALEOS_SYSTEM_Migrator: Already up-to-date
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: SFU Certificates:
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-01.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-02.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   eng.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: => Developement-Signed firmware
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Linux Syslog (display: No)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: LAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: VPN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SECURITY log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERVICES log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: EVENTS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERIAL log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: APPS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: UI log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ALMS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ADMIN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SYSTEM log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: NETSERV log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: FIRMWARE log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WEB log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Logging of Log Configuration complete.
+Jan  1 00:00:04 notice ALEOS_SERVICES_lpmmgr: LpmMgrReadMcuStatus() MCU status 0x5d04
+Jan  1 00:00:03 notice ALEOS_SERVICES_McuManager: Starting McuManager
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal power_manager_wakeup_state: Power Manager State:  1.
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: RegisterMcuNotification success
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: ProcessMcuNotification - READY_AND_OPERATIONAL received from MCU on isr [1]
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers: running version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers:    file version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: No MCU Firmware Download required
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO2_ANALOG] was entered
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO3_ANALOG] was entered
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: Configuration of ADC channel sensitivity successful
+Jan  1 00:00:04 err ALEOS_SYSTEM_Cmdexe: Currently connected to unknown band class :0
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: MCU configured properly [1]
+Jan  1 00:00:04 warning ALEOS_SERVICES_SMSPROC: File /mnt/hda1/smspwd not found
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: McuManager start running phase
+Jan  1 00:00:06 notice ALEOS_SYSTEM_STS: Starting STS
+Jan  1 00:00:07 notice ALEOS_WAN_linkmon: dvtFlag=-1.
+Jan  1 00:00:07 warning ALEOS_SERVICES_lpmmgr: LpmMgrAreChecksumsSame() MCU config status 0x3, rewriting configuration
+Jan  1 00:00:08 info dropbear[387]: Not backgrounding
+Jan  1 00:00:09 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:09 alert ALEOS_WAN: IPV4 Disconnect Handled
+Jan  1 00:00:10 alert ALEOS_SERIAL_HMC: Starting HMC
+Jan  1 00:00:10 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:11 info udhcpc[1731]: udhcpc (v1.14.1) started
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0 deconfig  to 0.0.0.0
+Jan  1 00:00:11 info udhcpc[1731]: Sending discover...
+Jan  1 00:00:11 alert ALEOS_SYSTEM: Checking Radio Firmware Version
+Jan  1 00:00:11 alert ALEOS_SYSTEM:    * Radio Type     : MC7304
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI ID   : 9904481
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI REV  : 05.01
+Jan  1 00:00:13 alert ALEOS_SYSTEM:    * Radio FW Vers  : SWI9X15C_05.05.58.00 r27038 carmd-fwbuild1 2015/03/04 21:30:23
+Jan  1 00:00:14 info udhcpc[1731]: Sending discover...
+Jan  1 00:00:15 notice ALEOS_WAN_MultiSIM: Starting MultiSIM Manager
+Jan  1 00:00:16 err ALEOS_WAN: Error removing br0 IPv6 address ''
+Jan  1 00:00:16 debug SWI0 SDK Process: >>MM sn or usb [0] 1-1
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:16 err ALEOS_WAN: Error clearing IPv6 default route
+Jan  1 00:00:16 notice ALEOS_WAN_MultiSIM: Active SIM slot is 1
+Jan  1 00:00:16 notice ALEOS_WAN_MultiSIM: Primary SIM slot is 1
+Jan  1 00:00:16 alert ALEOS_WAN_MultiSIM: Active SIM is slot 1. Reloading configuration
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:17 debug ALEOS_FIRMWARE_rmswitchingcheck: SDK pid is 2405
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Status : 3
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Verify Retries Left : 3
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:17 info udhcpc[1731]: Sending discover...
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: DONE
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Starting RadioRecovery
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Radio module recovery completed without taking action
+Jan  1 00:00:18 alert ALEOS_FIRMWARE_SWUpdate: No Radio Module Firmware Update pending
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: PDPRadioManager::getInstance()
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: P8Starting::run:	Wait sim ready to launch service/cellradio
+Jan  1 00:00:19 err ALEOS_WAN_RMAN: SetTimeout : New timeout = 2
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: P15PDPRadioManager::processMSCIID:	launching service/cellradio
+Jan  1 00:00:20 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:20 info udhcpc[1731]: No lease, failing
+Jan  1 00:00:21 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:23 notice ALEOS_WAN: SIM ready after 1 loop(s) - continuing
+Jan  1 00:00:26 notice ALEOS_WAN: Launching RadioTask...
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_SetNewSMSCbk - Failed Registering callback: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:29 notice InitNG: System is starting up.
+Jan  1 00:00:29 notice InitNG: System is up and running!
+Jan  1 00:00:29 alert ALEOS_SERIAL_HIF: Starting HIF
+Jan  1 00:00:29 notice ALEOS_SERIAL_HIF: HIF Init Done
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio is a ALEOS_RADIO_MODULE_MC7304 - GENEU-4G
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio technology type is [2] - [LTE]
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_INIT
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:31 debug ALEOS_WAN_RadioTask: SDK pid is 4548
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio module power mode is: RADIO_ONLINE
+Jan  1 00:00:31 alert ALEOS_LAN: MTU Source Auto - Set DHCP option 26 MTU: 1430
+Jan  1 00:00:31 alert ALEOS_LAN: MTU Source Auto - Ignore Opt 26 MTU size 1500
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Status : 3
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Verify Retries Left : 3
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ICCID : 8933201712116527988
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 5(WMS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 240(SWIOMA)
+Jan  1 00:00:31 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Jan  1 00:00:31 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V6 Active WDS Client: V6
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: cbkTestSetPowerCB - Radio Module Operating Mode: [RADIO_ONLINE]
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_SIM_READY
+Jan  1 00:00:32 info dnsmasq[3826]: started, version 2.55 cachesize 150
+Jan  1 00:00:32 info dnsmasq[3826]: compile time options: IPv6 GNU-getopt no-DBus no-I18N DHCP TFTP
+Jan  1 00:00:32 info dnsmasq-dhcp[3826]: DHCP, IP range 192.168.14.100 -- 192.168.14.100, lease time 1d
+Jan  1 00:00:32 info dnsmasq-dhcp[3826]: DHCP, IP range 192.168.13.100 -- 192.168.13.150, lease time 1d
+Jan  1 00:00:32 warning dnsmasq[3826]: no servers found in /etc/resolv.conf, will retry
+Jan  1 00:00:32 info dnsmasq[3826]: read /etc/hosts - 1 addresses
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Operator  : BYTEL
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_WAITING_ACTIVATION
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_ACTIVATED
+Jan  1 00:00:33 err ALEOS_WAN_RadioTask: Failed to retrieve phone number. Return Code: 1016
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Unable to retrieve phone number, proceeding to next state
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: APN read from Radio Module: ebouygtel.com
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: APN selection: internet-entreprise (User Entered)
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Using Primary APN: internet-entreprise
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Set APNName and credentials in Profile: APN 'internet-entreprise' with auth 0 (None), username ''
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Customer has selected All Bands
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_NOTREADY_WAIT
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: New Serving Operator : 208.20
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Service is available
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECT
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Network State is now Connecting To Network
+Sep  9 09:36:16 info dnsmasq-dhcp[3826]: DHCPDISCOVER(usb0) ae:bc:20:9a:e8:10 
+Sep  9 09:36:16 info dnsmasq-dhcp[3826]: DHCPOFFER(usb0) 192.168.14.100 ae:bc:20:9a:e8:10 
+Sep  9 09:36:16 info dnsmasq-dhcp[3826]: DHCPREQUEST(usb0) 192.168.14.100 ae:bc:20:9a:e8:10 
+Sep  9 09:36:16 info dnsmasq-dhcp[3826]: DHCPACK(usb0) 192.168.14.100 ae:bc:20:9a:e8:10 FRTLS-EL-ITE221
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: Current time: Sat Jan  1 00:00:34 2000
+Sep  9 09:36:16 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 09:36:16 2016
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: IPPreference : IPv4
+Sep  9 09:36:16 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 09:36:16 debug SWI0 SDK Process: psrwds_starnet:
+Sep  9 09:36:16 debug ALEOS_WAN_RadioTask: iSLQSStartStopDataSession/2765: WDS start interface verbose error: 0
+Sep  9 09:36:16 err ALEOS_WAN_RadioTask: Verbose call end type: 0, verbose call end code: 0
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: cbkPacketSrvStatus - v4SessionID: 1137897848 v6SessionID: 0 state: 2 (CONNECTED) reconfig not required
+Sep  9 09:36:16 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 09:36:16 debug SWI0 SDK Process: psrwds_getsettings:
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECTED
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: Radio interface is [8] - [LTE]
+Sep  9 09:36:16 notice ALEOS_WAN_RadioTask: service type is LTE
+Sep  9 09:36:16 info dnsmasq-dhcp[3826]: DHCPRELEASE(usb0) 192.168.14.100 ae:bc:20:9a:e8:10 
+Sep  9 09:36:17 info udhcpc[5564]: udhcpc (v1.14.1) started
+Sep  9 09:36:18 info udhcpc[5564]: Sending discover...
+Sep  9 09:36:18 info udhcpc[5564]: Sending select for 10.212.37.9...
+Sep  9 09:36:18 info udhcpc[5564]: Lease of 10.212.37.9 obtained, lease time 7200
+Sep  9 09:36:18 notice ALEOS_WAN: *** Network Connection successful. WAN IP : 10.212.37.9
+Sep  9 09:36:18 notice ALEOS_WAN: *** IP UP 10.212.37.9 : wwan0
+Sep  9 09:36:18 notice ALEOS_WAN: Setting WWAN MTU size to 1430
+Sep  9 09:36:21 info dnsmasq[3826]: reading /etc/resolv.conf
+Sep  9 09:36:21 info dnsmasq[3826]: using nameserver 62.201.159.99#53
+Sep  9 09:36:21 info dnsmasq[3826]: using nameserver 62.201.129.99#53
+Sep  9 09:36:21 info dnsmasq[3826]: read /etc/hosts - 1 addresses
+Sep  9 09:36:22 info dropbear[6174]: Child connection from 192.168.14.100:47802
+Sep  9 09:36:25 notice ALEOS_WAN_linkmon: Current: RSSI=-82, RSRQ=-20, RSRP=-117, SINR=-6.2
+Sep  9 09:36:25 notice ALEOS_WAN_linkmon: Network State is now Network Ready
+Sep  9 09:36:25 warning ALEOS_SERIAL_HMC: not in tcp mode current mode 0 
+Sep  9 09:36:28 notice dropbear[6174]: PAM password auth succeeded for 'root' from 192.168.14.100:47802
+Sep  9 09:36:59 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '10' seconds, '4' left
+Sep  9 09:37:45 info dropbear[7442]: Child connection from 192.168.14.100:42466
+Sep  9 09:37:45 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '20' seconds, '3' left
+Sep  9 09:37:46 notice dropbear[7442]: PAM password auth succeeded for 'root' from 192.168.14.100:42466
+Sep  9 09:37:46 info dropbear[7442]: Exit (root): Exited normally
+Sep  9 09:38:00 info dropbear[6174]: Exit (root): Disconnect received
+Sep  9 09:38:42 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '40' seconds, '2' left
+Sep  9 09:39:51 alert ALEOS_SYSTEM_Embedded_Ace_Reset: Reboot issued from UI...
+Sep  9 09:39:51 notice InitNG: System is going down.
+Sep  9 09:39:51 info dropbear[387]: Early exit: Terminated by signal
+Sep  9 09:39:51 info dnsmasq[3826]: exiting on receipt of SIGTERM
+Sep  9 09:39:51 crit ALEOS_SYSTEM_STS: STSUpdater: Process received signal 15
+Sep  9 09:39:52 notice ALEOS_WAN: Radio Task still running.. stop quickConnect
+Sep  9 09:39:53 alert ALEOS_SYSTEM: *** Start of last 50 lines in dmesg ***
+Sep  9 09:39:53 notice root: [   13.513371] usb 1-1: config 1 has no interface number 4
+Sep  9 09:39:53 notice root: [   13.518616] usb 1-1: config 1 has no interface number 5
+Sep  9 09:39:53 notice root: [   13.767420] GobiSerial 1-1:1.0: GobiSerial converter detected
+Sep  9 09:39:53 notice root: [   13.767730] usb 1-1: GobiSerial converter now attached to ttyUSB0
+Sep  9 09:39:53 notice root: [   13.786400] GobiSerial 1-1:1.2: GobiSerial converter detected
+Sep  9 09:39:53 notice root: [   13.786781] usb 1-1: GobiSerial converter now attached to ttyUSB1
+Sep  9 09:39:53 notice root: [   13.797057] GobiSerial 1-1:1.3: GobiSerial converter detected
+Sep  9 09:39:53 notice root: [   13.797437] usb 1-1: GobiSerial converter now attached to ttyUSB2
+Sep  9 09:39:53 notice root: [   13.813533] GobiNet 1-1:1.8 wwan0: register 'GobiNet' at usb-ci_hdrc.1-1, GobiNet Ethernet Device, 26:d1:78:d1:52:d7
+Sep  9 09:39:53 notice root: [   13.813553] RawIP mode
+Sep  9 09:39:53 notice root: [   13.820989] store IGN: 1.1.1
+Sep  9 09:39:53 notice root: [   13.831092] IGN_SYNC: tx_len(6), msg_type(0x2), time_duration(1)
+Sep  9 09:39:53 notice root: [   13.861627] USB Speed : USB 2.0
+Sep  9 09:39:53 notice root: [   13.894050] GobiNet 1-1:1.10 wwan1: register 'GobiNet' at usb-ci_hdrc.1-1, GobiNet Ethernet Device, 26:d1:78:d1:52:d7
+Sep  9 09:39:53 notice root: [   13.894071] RawIP mode
+Sep  9 09:39:53 notice root: [   13.898449] USB Speed : USB 2.0
+Sep  9 09:39:53 notice root: [   13.942615] store LVD: 2.1.30.947.1104
+Sep  9 09:39:53 notice root: [   13.981000] LVD_SYNC: tx_len(7), msg_type(0x3), enable(1), time_duration(30)
+Sep  9 09:39:53 notice root: [   14.072547] LVD_SYNC: lt_volt(0x3b3), rt_volt(0x450)
+Sep  9 09:39:53 notice root: [   14.178501] store IO: 4.0.1
+Sep  9 09:39:53 notice root: [   14.183842] IO_SYNC: tx_len(6), msg_type(0x1), enable(0), time_duration(1)
+Sep  9 09:39:53 notice root: [   15.004033] fec 2188000.ethernet eth0: Freescale FEC PHY driver [Atheros 8035 ethernet] (mii_bus:phy_addr=2188000.ethernet:05, irq=-1)
+Sep  9 09:39:53 notice root: [   15.022708] fec_enet_open: fec_enet_private.link(0), phy_device.link(1)
+Sep  9 09:39:53 notice root: [   15.029442] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep  9 09:39:53 notice root: [   15.876517] Program 0xB29A into 0x78016
+Sep  9 09:39:53 notice root: [   15.903758] TE Disabled
+Sep  9 09:39:53 notice root: [   15.914501] 0x7_8016[0xb29a]
+Sep  9 09:39:53 notice root: [   15.956750] TE Disabled
+Sep  9 09:39:53 notice root: [   15.975769] creating qcqmi0
+Sep  9 09:39:53 notice root: [   16.024768] creating qcqmi1
+Sep  9 09:39:53 notice root: [   16.042093] device eth0 entered promiscuous mode
+Sep  9 09:39:53 notice root: [   19.170749] using random self ethernet address
+Sep  9 09:39:53 notice root: [   19.191611] using random host ethernet address
+Sep  9 09:39:53 notice root: [   19.213706] usb0: HOST MAC ae:bc:20:9a:e8:10
+Sep  9 09:39:53 notice root: [   19.220604] usb0: MAC 0a:68:35:52:5b:fb
+Sep  9 09:39:53 notice root: [   19.220673] using random self ethernet address
+Sep  9 09:39:53 notice root: [   19.241346] using random host ethernet address
+Sep  9 09:39:53 notice root: [   19.262614] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008/SWI_2.2
+Sep  9 09:39:53 notice root: [   19.262629] g_ether gadget: g_ether ready
+Sep  9 09:39:53 notice root: [   19.582472] g_ether gadget: high-speed config #2: RNDIS
+Sep  9 09:39:53 notice root: [   23.796747] ISO 9660 Extensions: RRIP_1991A
+Sep  9 09:39:53 notice root: [   40.061425] g_ether gadget: high-speed config #2: RNDIS
+Sep  9 09:39:53 notice root: [   40.356091] MCU_UTC_SYNC: (0x90, 0x82, 0xd2, 0x57)
+Sep  9 09:39:53 notice root: [   40.362958] store TOD: 3.0.40.20.824.1
+Sep  9 09:39:53 notice root: [   40.381908] kl03z: complete the current CMD (9)
+Sep  9 09:39:53 notice root: [   40.392016] TOD_SYNC: tx_len(7), msg_type(0x4), enable(0), init_offset_highest_bit(0), init_offset_lower_bits(824), init_state(1)
+Sep  9 09:39:53 notice root: [   40.475936] TOD_SYNC: active_window(40), inactive_window(20)
+Sep  9 09:39:53 notice root: [  255.483752] imx2-wdt 20bc000.wdog: Unexpected close: Expect reboot!
+Sep  9 09:39:53 notice root: [  255.755575] device eth0 left promiscuous mode
+Sep  9 09:39:53 notice root: [  255.755639] br0: port 1(eth0) entered disabled state
+Sep  9 09:39:53 alert ALEOS_SYSTEM: *** End of last 50 lines in dmesg ***
+Sep  9 09:39:53 notice syslog-ng[198]: syslog-ng shutting down; version='3.8.1'
+Jan  1 00:00:00 notice syslog-ng[198]: syslog-ng starting up; version='3.8.1'
+Jan  1 00:00:00 alert ALEOS_SYSTEM:    _   _   _   _   _      
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   / \ / \ / \ / \ / \     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:  | A | L | E | O | S |    
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   \_/ \_/ \_/ \_/ \_/     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Sierra Wireless       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Copyright 2009-2016 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Version: 4.8.0.P22 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Single Code-Set       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM: Serial no: LT53530069011025  
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: START
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: ALEOS time is set to Sat Jan  1 00:00:00 2000
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: END
+Jan  1 00:00:00 info ALEOS_SYSTEM_WDlog: Starting Monitor Process
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: HW Watchdog enabled. 
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: New HW Watchdog timeout: 240 seconds. 
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for SM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Storage Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for CSM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Storage Manager is now ready - Continue
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Configuration Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Initializing...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Hard-coded default configuration retrieved
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Requesting persisted user configuration...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Data reading done
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Persisted user configuration retrieved
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Default configuration already peristed in user configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Running...
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for LTE Radio
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs Serial Port
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Serial0    Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for GNSS
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: QualcommDM Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: No External Card Detected
+Jan  1 00:00:01 info ALEOS_SYSTEM: Check Reset Configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM: No reset backup configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_csmMigrator: csmMigrator: Migration complete.
+Jan  1 00:00:01 notice ALEOS_SYSTEM_Migrator: Already up-to-date
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: SFU Certificates:
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-01.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-02.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   eng.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: => Developement-Signed firmware
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Linux Syslog (display: No)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: LAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: VPN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SECURITY log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERVICES log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: EVENTS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERIAL log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: APPS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: UI log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ALMS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ADMIN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SYSTEM log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: NETSERV log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: FIRMWARE log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WEB log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Logging of Log Configuration complete.
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: Starting McuManager
+Jan  1 00:00:04 notice ALEOS_SERVICES_lpmmgr: LpmMgrReadMcuStatus() MCU status 0x5d04
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal power_manager_wakeup_state: Power Manager State:  1.
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: RegisterMcuNotification success
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: ProcessMcuNotification - READY_AND_OPERATIONAL received from MCU on isr [1]
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers: running version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers:    file version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: No MCU Firmware Download required
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO2_ANALOG] was entered
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO3_ANALOG] was entered
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: Configuration of ADC channel sensitivity successful
+Jan  1 00:00:04 err ALEOS_SYSTEM_Cmdexe: Currently connected to unknown band class :0
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: MCU configured properly [1]
+Jan  1 00:00:04 warning ALEOS_SERVICES_SMSPROC: File /mnt/hda1/smspwd not found
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: McuManager start running phase
+Jan  1 00:00:07 notice ALEOS_SYSTEM_STS: Starting STS
+Jan  1 00:00:07 notice ALEOS_WAN_linkmon: dvtFlag=-1.
+Jan  1 00:00:07 warning ALEOS_SERVICES_lpmmgr: LpmMgrAreChecksumsSame() MCU config status 0x3, rewriting configuration
+Jan  1 00:00:08 info dropbear[387]: Not backgrounding
+Jan  1 00:00:09 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:10 notice syslog-ng[198]: Configuration reload request received, reloading configuration;
+Jan  1 00:00:10 alert ALEOS_WAN: IPV4 Disconnect Handled
+Jan  1 00:00:10 alert ALEOS_SERIAL_HMC: Starting HMC
+Jan  1 00:00:11 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:11 warning syslog-ng[198]: Input is valid utf8, but the log message is not tagged as such, this performs worse than enabling validate-utf8 flag on input; value='syslog-ng'
+Jan  1 00:00:11 info udhcpc[1723]: udhcpc (v1.14.1) started
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0 deconfig  to 0.0.0.0
+Jan  1 00:00:11 alert ALEOS_SYSTEM: Checking Radio Firmware Version
+Jan  1 00:00:11 info udhcpc[1723]: Sending discover...
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio Type     : MC7304
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI ID   : 9904481
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI REV  : 05.01
+Jan  1 00:00:13 alert ALEOS_SYSTEM:    * Radio FW Vers  : SWI9X15C_05.05.58.00 r27038 carmd-fwbuild1 2015/03/04 21:30:23
+Jan  1 00:00:14 info udhcpc[1723]: Sending discover...
+Jan  1 00:00:15 notice ALEOS_WAN_MultiSIM: Starting MultiSIM Manager
+Jan  1 00:00:16 err ALEOS_WAN: Error removing br0 IPv6 address ''
+Jan  1 00:00:16 debug SWI0 SDK Process: >>MM sn or usb [0] 1-1
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:16 err ALEOS_WAN: Error clearing IPv6 default route
+Jan  1 00:00:16 notice ALEOS_WAN_MultiSIM: Active SIM slot is 1
+Jan  1 00:00:16 notice ALEOS_WAN_MultiSIM: Primary SIM slot is 1
+Jan  1 00:00:16 alert ALEOS_WAN_MultiSIM: Active SIM is slot 1. Reloading configuration
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:17 debug ALEOS_FIRMWARE_rmswitchingcheck: SDK pid is 2396
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:17 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Status : 3
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Verify Retries Left : 3
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:17 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:18 info udhcpc[1723]: Sending discover...
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: DONE
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Starting RadioRecovery
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Radio module recovery completed without taking action
+Jan  1 00:00:19 alert ALEOS_FIRMWARE_SWUpdate: No Radio Module Firmware Update pending
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: PDPRadioManager::getInstance()
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: P8Starting::run:	Wait sim ready to launch service/cellradio
+Jan  1 00:00:19 err ALEOS_WAN_RMAN: SetTimeout : New timeout = 2
+Jan  1 00:00:19 notice ALEOS_WAN_RMAN: P15PDPRadioManager::processMSCIID:	launching service/cellradio
+Jan  1 00:00:21 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:21 info udhcpc[1723]: No lease, failing
+Jan  1 00:00:21 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:23 notice ALEOS_WAN: SIM ready after 1 loop(s) - continuing
+Jan  1 00:00:26 notice ALEOS_WAN: Launching RadioTask...
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_SetNewSMSCbk - Failed Registering callback: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:28 err syslog-ng[198]: Syslog connection failed; fd='33', server='AF_INET(192.168.14.100:6516)', error='No route to host (113)', time_reopen='60'
+Jan  1 00:00:29 notice InitNG: System is starting up.
+Jan  1 00:00:29 notice InitNG: System is up and running!
+Jan  1 00:00:29 alert ALEOS_SERIAL_HIF: Starting HIF
+Jan  1 00:00:29 notice ALEOS_SERIAL_HIF: HIF Init Done
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio is a ALEOS_RADIO_MODULE_MC7304 - GENEU-4G
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio technology type is [2] - [LTE]
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_INIT
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:31 debug ALEOS_WAN_RadioTask: SDK pid is 4537
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio module power mode is: RADIO_ONLINE
+Jan  1 00:00:31 alert ALEOS_LAN: MTU Source Auto - Set DHCP option 26 MTU: 1430
+Jan  1 00:00:31 alert ALEOS_LAN: MTU Source Auto - Ignore Opt 26 MTU size 1500
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Status : 3
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Verify Retries Left : 3
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: ICCID : 8933201712116527988
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 5(WMS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 240(SWIOMA)
+Jan  1 00:00:31 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Jan  1 00:00:31 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V6 Active WDS Client: V6
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: cbkTestSetPowerCB - Radio Module Operating Mode: [RADIO_ONLINE]
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_SIM_READY
+Jan  1 00:00:32 info dnsmasq[3802]: started, version 2.55 cachesize 150
+Jan  1 00:00:32 info dnsmasq[3802]: compile time options: IPv6 GNU-getopt no-DBus no-I18N DHCP TFTP
+Jan  1 00:00:32 info dnsmasq-dhcp[3802]: DHCP, IP range 192.168.14.100 -- 192.168.14.100, lease time 1d
+Jan  1 00:00:32 info dnsmasq-dhcp[3802]: DHCP, IP range 192.168.13.100 -- 192.168.13.150, lease time 1d
+Jan  1 00:00:32 warning dnsmasq[3802]: no servers found in /etc/resolv.conf, will retry
+Jan  1 00:00:32 info dnsmasq[3802]: read /etc/hosts - 1 addresses
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Operator  : BYTEL
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_WAITING_ACTIVATION
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_ACTIVATED
+Jan  1 00:00:33 err ALEOS_WAN_RadioTask: Failed to retrieve phone number. Return Code: 1016
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Unable to retrieve phone number, proceeding to next state
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: APN read from Radio Module: internet-entreprise
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: APN selection: internet-entreprise (User Entered)
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Using Primary APN: internet-entreprise
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Customer has selected All Bands
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_NOTREADY_WAIT
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: New Serving Operator : 208.20
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Service is available
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECT
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Network State is now Connecting To Network
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: Current time: Sat Jan  1 00:00:34 2000
+Sep  9 09:40:49 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 09:40:49 2016
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: IPPreference : IPv4
+Sep  9 09:40:49 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 09:40:49 debug SWI0 SDK Process: psrwds_starnet:
+Sep  9 09:40:49 debug ALEOS_WAN_RadioTask: iSLQSStartStopDataSession/2765: WDS start interface verbose error: 0
+Sep  9 09:40:49 err ALEOS_WAN_RadioTask: Verbose call end type: 0, verbose call end code: 0
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: cbkPacketSrvStatus - v4SessionID: 1137708896 v6SessionID: 0 state: 2 (CONNECTED) reconfig not required
+Sep  9 09:40:49 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 09:40:49 debug SWI0 SDK Process: psrwds_getsettings:
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECTED
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: Radio interface is [8] - [LTE]
+Sep  9 09:40:49 notice ALEOS_WAN_RadioTask: service type is LTE
+Sep  9 09:40:49 info udhcpc[5298]: udhcpc (v1.14.1) started
+Sep  9 09:40:49 info udhcpc[5298]: Sending discover...
+Sep  9 09:40:49 info udhcpc[5298]: Sending select for 10.212.213.187...
+Sep  9 09:40:49 info udhcpc[5298]: Lease of 10.212.213.187 obtained, lease time 7200
+Sep  9 09:40:50 notice ALEOS_WAN: *** Network Connection successful. WAN IP : 10.212.213.187
+Sep  9 09:40:50 notice ALEOS_WAN: *** IP UP 10.212.213.187 : wwan0
+Sep  9 09:40:50 notice ALEOS_WAN: Setting WWAN MTU size to 1430
+Sep  9 09:40:55 info dnsmasq[3802]: reading /etc/resolv.conf
+Sep  9 09:40:55 info dnsmasq[3802]: using nameserver 62.201.159.99#53
+Sep  9 09:40:55 info dnsmasq[3802]: using nameserver 62.201.129.99#53
+Sep  9 09:40:55 info dnsmasq[3802]: read /etc/hosts - 1 addresses
+Sep  9 09:40:57 notice ALEOS_WAN_linkmon: Current: RSSI=-74, RSRQ=-20, RSRP=-99, SINR=4.0
+Sep  9 09:40:57 notice ALEOS_WAN_linkmon: Network State is now Network Ready
+Sep  9 09:40:57 warning ALEOS_SERIAL_HMC: not in tcp mode current mode 0 
+Sep  9 09:40:58 info dnsmasq-dhcp[3802]: DHCPDISCOVER(usb0) 76:74:7e:95:f1:82 
+Sep  9 09:40:58 info dnsmasq-dhcp[3802]: DHCPOFFER(usb0) 192.168.14.100 76:74:7e:95:f1:82 
+Sep  9 09:40:58 info dnsmasq-dhcp[3802]: DHCPREQUEST(usb0) 192.168.14.100 76:74:7e:95:f1:82 
+Sep  9 09:40:58 info dnsmasq-dhcp[3802]: DHCPACK(usb0) 192.168.14.100 76:74:7e:95:f1:82 FRTLS-EL-ITE221
+Sep  9 09:41:31 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '10' seconds, '4' left
+Sep  9 09:41:43 notice syslog-ng[198]: Syslog connection established; fd='20', server='AF_INET(192.168.14.100:6516)', local='AF_INET(0.0.0.0:0)'
+Sep  9 09:42:17 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '20' seconds, '3' left
+Sep  9 09:43:11 info dropbear[8080]: Child connection from 192.168.14.100:53570
+Sep  9 09:43:12 notice dropbear[8080]: PAM password auth succeeded for 'root' from 192.168.14.100:53570
+Sep  9 09:43:12 info dropbear[8080]: Exit (root): Exited normally
+Sep  9 09:43:13 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '40' seconds, '2' left
+Sep  9 09:44:30 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '80' seconds, '1' left
+Sep  9 09:46:26 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '160' seconds, '0' left
+Sep  9 09:49:42 warning ALEOS_ALMS_LWM2M: Failed bootstrap, nothing left to do
+Sep  9 09:50:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=172', processed='center(received)=520', processed='destination(d_messages)=260', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=172', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=5', stamp='src.internal(s_system#1)=1473414103', processed='center(queued)=692', processed='source(s_system)=260', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=333', processed='global(sdata_updates)=0', processed='source(s_messages)=260', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=260'
+Sep  9 09:56:07 notice ALEOS_WAN_RadioTask: Service is not available
+Sep  9 09:56:07 notice ALEOS_WAN_RadioTask: Service is available
+Sep  9 10:00:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=174', processed='center(received)=526', processed='destination(d_messages)=263', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=174', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=6', stamp='src.internal(s_system#1)=1473414625', processed='center(queued)=700', processed='source(s_system)=263', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=339', processed='global(sdata_updates)=0', processed='source(s_messages)=263', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=263'
+Sep  9 10:02:19 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=1.6
+Sep  9 10:10:24 info dropbear[27334]: Child connection from 192.168.14.100:46652
+Sep  9 10:10:24 notice dropbear[27334]: PAM password auth succeeded for 'root' from 192.168.14.100:46652
+Sep  9 10:10:24 info dropbear[27334]: Exit (root): Exited normally
+Sep  9 10:10:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=175', processed='center(received)=536', processed='destination(d_messages)=268', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=175', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=7', stamp='src.internal(s_system#1)=1473415225', processed='center(queued)=711', processed='source(s_system)=268', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=347', processed='global(sdata_updates)=0', processed='source(s_messages)=268', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=268'
+Sep  9 10:20:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=175', processed='center(received)=538', processed='destination(d_messages)=269', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=175', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=8', stamp='src.internal(s_system#1)=1473415825', processed='center(queued)=713', processed='source(s_system)=269', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=349', processed='global(sdata_updates)=0', processed='source(s_messages)=269', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=269'
+Sep  9 10:22:47 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=1.2
+Sep  9 10:30:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=176', processed='center(received)=542', processed='destination(d_messages)=271', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=176', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=9', stamp='src.internal(s_system#1)=1473416425', processed='center(queued)=718', processed='source(s_system)=271', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=352', processed='global(sdata_updates)=0', processed='source(s_messages)=271', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=271'
+Sep  9 10:40:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=176', processed='center(received)=544', processed='destination(d_messages)=272', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=176', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=10', stamp='src.internal(s_system#1)=1473417025', processed='center(queued)=720', processed='source(s_system)=272', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=354', processed='global(sdata_updates)=0', processed='source(s_messages)=272', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=272'
+Sep  9 10:40:52 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 10:40:52 2016
+Sep  9 10:40:52 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 10:40:52 2016
+Sep  9 10:43:48 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=1.2
+Sep  9 10:50:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=178', processed='center(received)=552', processed='destination(d_messages)=276', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=178', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=11', stamp='src.internal(s_system#1)=1473417625', processed='center(queued)=730', processed='source(s_system)=276', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=359', processed='global(sdata_updates)=0', processed='source(s_messages)=276', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=276'
+Sep  9 11:00:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=178', processed='center(received)=554', processed='destination(d_messages)=277', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=178', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=12', stamp='src.internal(s_system#1)=1473418225', processed='center(queued)=732', processed='source(s_system)=277', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=361', processed='global(sdata_updates)=0', processed='source(s_messages)=277', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=277'
+Sep  9 11:05:37 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=3.6
+Sep  9 11:10:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=179', processed='center(received)=558', processed='destination(d_messages)=279', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=179', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=13', stamp='src.internal(s_system#1)=1473418825', processed='center(queued)=737', processed='source(s_system)=279', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=364', processed='global(sdata_updates)=0', processed='source(s_messages)=279', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=279'
+Sep  9 11:20:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=179', processed='center(received)=560', processed='destination(d_messages)=280', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=179', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=14', stamp='src.internal(s_system#1)=1473419425', processed='center(queued)=739', processed='source(s_system)=280', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=366', processed='global(sdata_updates)=0', processed='source(s_messages)=280', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=280'
+Sep  9 11:26:08 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=0.4
+Sep  9 11:30:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=180', processed='center(received)=564', processed='destination(d_messages)=282', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=180', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=15', stamp='src.internal(s_system#1)=1473420025', processed='center(queued)=744', processed='source(s_system)=282', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=369', processed='global(sdata_updates)=0', processed='source(s_messages)=282', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=282'
+Sep  9 11:40:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=180', processed='center(received)=566', processed='destination(d_messages)=283', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=180', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=16', stamp='src.internal(s_system#1)=1473420625', processed='center(queued)=746', processed='source(s_system)=283', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=371', processed='global(sdata_updates)=0', processed='source(s_messages)=283', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=283'
+Sep  9 11:40:56 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 11:40:55 2016
+Sep  9 11:40:56 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 11:40:56 2016
+Sep  9 11:47:04 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=3.4
+Sep  9 11:50:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=182', processed='center(received)=574', processed='destination(d_messages)=287', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=182', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=17', stamp='src.internal(s_system#1)=1473421225', processed='center(queued)=756', processed='source(s_system)=287', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=376', processed='global(sdata_updates)=0', processed='source(s_messages)=287', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=287'
+Sep  9 12:00:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=182', processed='center(received)=576', processed='destination(d_messages)=288', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=182', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=18', stamp='src.internal(s_system#1)=1473421826', processed='center(queued)=758', processed='source(s_system)=288', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=378', processed='global(sdata_updates)=0', processed='source(s_messages)=288', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=288'
+Sep  9 12:08:56 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=3.8
+Sep  9 12:10:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=183', processed='center(received)=580', processed='destination(d_messages)=290', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=183', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=19', stamp='src.internal(s_system#1)=1473422426', processed='center(queued)=763', processed='source(s_system)=290', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=381', processed='global(sdata_updates)=0', processed='source(s_messages)=290', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=290'
+Sep  9 12:20:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=183', processed='center(received)=582', processed='destination(d_messages)=291', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=183', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=20', stamp='src.internal(s_system#1)=1473423026', processed='center(queued)=765', processed='source(s_system)=291', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=383', processed='global(sdata_updates)=0', processed='source(s_messages)=291', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=291'
+Sep  9 12:29:30 notice ALEOS_WAN_linkmon: Current: RSSI=-69, RSRQ=-20, RSRP=-99, SINR=3.4
+Sep  9 12:30:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=184', processed='center(received)=586', processed='destination(d_messages)=293', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=184', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=21', stamp='src.internal(s_system#1)=1473423626', processed='center(queued)=770', processed='source(s_system)=293', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=386', processed='global(sdata_updates)=0', processed='source(s_messages)=293', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=293'
+Sep  9 12:40:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=184', processed='center(received)=588', processed='destination(d_messages)=294', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=184', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=22', stamp='src.internal(s_system#1)=1473424226', processed='center(queued)=772', processed='source(s_system)=294', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=388', processed='global(sdata_updates)=0', processed='source(s_messages)=294', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=294'
+Sep  9 12:40:56 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 12:40:56 2016
+Sep  9 12:40:56 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 12:40:56 2016
+Sep  9 12:41:06 info dropbear[4299]: Child connection from 192.168.14.100:41920
+Sep  9 12:41:07 notice dropbear[4299]: PAM password auth succeeded for 'root' from 192.168.14.100:41920
+Sep  9 12:41:07 info dropbear[4299]: Exit (root): Exited normally
+Sep  9 12:49:55 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=1.6
+Sep  9 12:50:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=186', processed='center(received)=602', processed='destination(d_messages)=301', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=186', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=23', stamp='src.internal(s_system#1)=1473424826', processed='center(queued)=788', processed='source(s_system)=301', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=398', processed='global(sdata_updates)=0', processed='source(s_messages)=301', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=301'
+Sep  9 12:51:36 info dropbear[11759]: Child connection from 192.168.14.100:49052
+Sep  9 12:51:40 notice dropbear[11759]: PAM password auth succeeded for 'root' from 192.168.14.100:49052
+Sep  9 12:52:18 info dropbear[11759]: Exit (root): Disconnect received
+Sep  9 13:00:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=186', processed='center(received)=610', processed='destination(d_messages)=305', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=186', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=24', stamp='src.internal(s_system#1)=1473425426', processed='center(queued)=796', processed='source(s_system)=305', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=405', processed='global(sdata_updates)=0', processed='source(s_messages)=305', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=305'
+Sep  9 13:09:28 info dropbear[24518]: Child connection from 192.168.14.100:54305
+Sep  9 13:09:29 notice dropbear[24518]: PAM password auth succeeded for 'root' from 192.168.14.100:54305
+Sep  9 13:09:29 info dropbear[24518]: Exit (root): Exited normally
+Sep  9 13:09:38 info dropbear[24624]: Child connection from 192.168.14.100:40842
+Sep  9 13:09:39 notice dropbear[24624]: PAM password auth succeeded for 'root' from 192.168.14.100:40842
+Sep  9 13:09:39 info dropbear[24624]: Exit (root): Exited normally
+Sep  9 13:10:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=186', processed='center(received)=624', processed='destination(d_messages)=312', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=186', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=25', stamp='src.internal(s_system#1)=1473426026', processed='center(queued)=810', processed='source(s_system)=312', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=417', processed='global(sdata_updates)=0', processed='source(s_messages)=312', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=312'
+Sep  9 13:11:50 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=2.0
+Sep  9 13:20:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=187', processed='center(received)=628', processed='destination(d_messages)=314', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=187', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=26', stamp='src.internal(s_system#1)=1473426626', processed='center(queued)=815', processed='source(s_system)=314', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=420', processed='global(sdata_updates)=0', processed='source(s_messages)=314', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=314'
+Sep  9 13:30:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=187', processed='center(received)=630', processed='destination(d_messages)=315', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=187', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=27', stamp='src.internal(s_system#1)=1473427226', processed='center(queued)=817', processed='source(s_system)=315', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=422', processed='global(sdata_updates)=0', processed='source(s_messages)=315', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=315'
+Sep  9 13:32:20 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=5.2
+Sep  9 13:40:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=188', processed='center(received)=634', processed='destination(d_messages)=317', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=188', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=28', stamp='src.internal(s_system#1)=1473427826', processed='center(queued)=822', processed='source(s_system)=317', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=425', processed='global(sdata_updates)=0', processed='source(s_messages)=317', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=317'
+Sep  9 13:40:59 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 13:40:59 2016
+Sep  9 13:40:59 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 13:40:59 2016
+Sep  9 13:50:25 notice ALEOS_SERVICES_McuManager: ProcessPolling McuManager handled [100] poll
+Sep  9 13:50:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=189', processed='center(received)=641', processed='destination(d_messages)=321', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=189', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=29', stamp='src.internal(s_system#1)=1473428426', processed='center(queued)=831', processed='source(s_system)=321', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=430', processed='global(sdata_updates)=0', processed='source(s_messages)=320', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=321'
+Sep  9 13:53:25 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=1.6
+Sep  9 14:00:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=191', processed='center(received)=646', processed='destination(d_messages)=323', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=191', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=30', stamp='src.internal(s_system#1)=1473429025', processed='center(queued)=837', processed='source(s_system)=323', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=433', processed='global(sdata_updates)=0', processed='source(s_messages)=323', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=323'
+Sep  9 14:10:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=191', processed='center(received)=648', processed='destination(d_messages)=324', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=191', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=31', stamp='src.internal(s_system#1)=1473429625', processed='center(queued)=839', processed='source(s_system)=324', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=435', processed='global(sdata_updates)=0', processed='source(s_messages)=324', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=324'
+Sep  9 14:15:04 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=1.6
+Sep  9 14:20:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=192', processed='center(received)=652', processed='destination(d_messages)=326', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=192', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=32', stamp='src.internal(s_system#1)=1473430225', processed='center(queued)=844', processed='source(s_system)=326', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=438', processed='global(sdata_updates)=0', processed='source(s_messages)=326', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=326'
+Sep  9 14:28:51 info dnsmasq-dhcp[3802]: DHCPDISCOVER(usb0) 76:74:7e:95:f1:82 
+Sep  9 14:28:51 info dnsmasq-dhcp[3802]: DHCPOFFER(usb0) 192.168.14.100 76:74:7e:95:f1:82 
+Sep  9 14:28:51 info dnsmasq-dhcp[3802]: DHCPREQUEST(usb0) 192.168.14.100 76:74:7e:95:f1:82 
+Sep  9 14:28:51 info dnsmasq-dhcp[3802]: DHCPACK(usb0) 192.168.14.100 76:74:7e:95:f1:82 FRTLS-EL-ITE221
+Sep  9 14:28:51 info dnsmasq-dhcp[3802]: DHCPRELEASE(usb0) 192.168.14.100 76:74:7e:95:f1:82 
+Sep  9 14:29:14 info dropbear[20170]: Child connection from 192.168.14.100:53853
+Sep  9 14:29:14 notice dropbear[20170]: PAM password auth succeeded for 'root' from 192.168.14.100:53853
+Sep  9 14:29:14 info dropbear[20170]: Exit (root): Exited normally
+Sep  9 14:29:27 info dropbear[20411]: Child connection from 192.168.14.100:47626
+Sep  9 14:29:28 notice dropbear[20411]: PAM password auth succeeded for 'root' from 192.168.14.100:47626
+Sep  9 14:29:28 info dropbear[20411]: Exit (root): Exited normally
+Sep  9 14:30:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=192', processed='center(received)=676', processed='destination(d_messages)=338', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=192', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=33', stamp='src.internal(s_system#1)=1473430825', processed='center(queued)=868', processed='source(s_system)=338', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=456', processed='global(sdata_updates)=0', processed='source(s_messages)=338', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=338'
+Sep  9 14:33:51 info dropbear[23538]: Child connection from 192.168.14.100:53441
+Sep  9 14:33:52 notice dropbear[23538]: PAM password auth succeeded for 'root' from 192.168.14.100:53441
+Sep  9 14:33:52 info dropbear[23538]: Exit (root): Exited normally
+Sep  9 14:33:56 info dropbear[23563]: Child connection from 192.168.14.100:53327
+Sep  9 14:33:57 notice dropbear[23563]: PAM password auth succeeded for 'root' from 192.168.14.100:53327
+Sep  9 14:33:57 info dropbear[23563]: Exit (root): Exited normally
+Sep  9 14:35:51 notice ALEOS_WAN_linkmon: Current: RSSI=-75, RSRQ=-20, RSRP=-99, SINR=4.6
+Sep  9 14:40:25 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=193', processed='center(received)=692', processed='destination(d_messages)=346', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=193', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=34', stamp='src.internal(s_system#1)=1473431425', processed='center(queued)=885', processed='source(s_system)=346', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=469', processed='global(sdata_updates)=0', processed='source(s_messages)=346', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=346'
+Sep  9 14:41:03 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 14:41:02 2016
+Sep  9 14:41:03 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 14:41:03 2016
+Sep  9 14:50:26 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=194', processed='center(received)=698', processed='destination(d_messages)=349', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=194', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=35', stamp='src.internal(s_system#1)=1473432025', processed='center(queued)=892', processed='source(s_system)=349', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=473', processed='global(sdata_updates)=0', processed='source(s_messages)=349', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=349'
+Jan  1 00:00:00 notice syslog-ng[198]: syslog-ng starting up; version='3.8.1'
+Jan  1 00:00:00 alert ALEOS_SYSTEM:    _   _   _   _   _      
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   / \ / \ / \ / \ / \     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:  | A | L | E | O | S |    
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   \_/ \_/ \_/ \_/ \_/     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Sierra Wireless       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Copyright 2009-2016 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Version: 4.8.0.P22 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Single Code-Set       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM: Serial no: LT53530069011025  
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: START
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: ALEOS time is set to Sat Jan  1 00:00:00 2000
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: END
+Jan  1 00:00:00 info ALEOS_SYSTEM_WDlog: Starting Monitor Process
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: HW Watchdog enabled. 
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: New HW Watchdog timeout: 240 seconds. 
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for SM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Storage Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for CSM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Storage Manager is now ready - Continue
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Configuration Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Initializing...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Hard-coded default configuration retrieved
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Requesting persisted user configuration...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Data reading done
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Persisted user configuration retrieved
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Default configuration already peristed in user configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Running...
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for LTE Radio
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs Serial Port
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Serial0    Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for GNSS
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: QualcommDM Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: No External Card Detected
+Jan  1 00:00:01 info ALEOS_SYSTEM: Check Reset Configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM: No reset backup configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_csmMigrator: csmMigrator: Migration complete.
+Jan  1 00:00:01 notice ALEOS_SYSTEM_Migrator: Already up-to-date
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: SFU Certificates:
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-01.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-02.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security:   eng.crt
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_Security: => Developement-Signed firmware
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Linux Syslog (display: No)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: LAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: VPN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SECURITY log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERVICES log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: EVENTS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SERIAL log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: APPS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: UI log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ALMS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: ADMIN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: SYSTEM log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: NETSERV log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: FIRMWARE log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: WEB log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:03 alert ALEOS_ADMIN_logLogCfg: Logging of Log Configuration complete.
+Jan  1 00:00:03 notice ALEOS_SERVICES_McuManager: Starting McuManager
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal power_manager_wakeup_state: Power Manager State:  1.
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: RegisterMcuNotification success
+Jan  1 00:00:04 notice ALEOS_SERVICES_lpmmgr: LpmMgrReadMcuStatus() MCU status 0x5d04
+Jan  1 00:00:04 err ALEOS_SYSTEM_Cmdexe: Currently connected to unknown band class :0
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: ProcessMcuNotification - READY_AND_OPERATIONAL received from MCU on isr [1]
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers: running version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers:    file version: 01.11bc0cea5655b947110430
+Jan  1 00:00:04 notice ALEOS_SERVICES_McuManager: No MCU Firmware Download required
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO2_ANALOG] was entered
+Jan  1 00:00:04 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO3_ANALOG] was entered
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: Configuration of ADC channel sensitivity successful
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: MCU configured properly [1]
+Jan  1 00:00:05 warning ALEOS_SERVICES_SMSPROC: File /mnt/hda1/smspwd not found
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: McuManager start running phase
+Jan  1 00:00:07 notice ALEOS_WAN_linkmon: dvtFlag=-1.
+Jan  1 00:00:07 notice ALEOS_SYSTEM_STS: Starting STS
+Jan  1 00:00:08 warning ALEOS_SERVICES_lpmmgr: LpmMgrAreChecksumsSame() MCU config status 0x3, rewriting configuration
+Jan  1 00:00:08 info dropbear[389]: Not backgrounding
+Jan  1 00:00:09 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:10 alert ALEOS_WAN: IPV4 Disconnect Handled
+Jan  1 00:00:10 notice syslog-ng[198]: Configuration reload request received, reloading configuration;
+Jan  1 00:00:10 alert ALEOS_SERIAL_HMC: Starting HMC
+Jan  1 00:00:11 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:11 info udhcpc[1676]: udhcpc (v1.14.1) started
+Jan  1 00:00:11 warning syslog-ng[198]: Input is valid utf8, but the log message is not tagged as such, this performs worse than enabling validate-utf8 flag on input; value='syslog-ng'
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:11 notice root: running ALEOS udhcpc_br0 deconfig  to 0.0.0.0
+Jan  1 00:00:12 info udhcpc[1676]: Sending discover...
+Jan  1 00:00:12 alert ALEOS_SYSTEM: Checking Radio Firmware Version
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio Type     : MC7304
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI ID   : 9904481
+Jan  1 00:00:12 alert ALEOS_SYSTEM:    * Radio PRI REV  : 05.01
+Jan  1 00:00:14 alert ALEOS_SYSTEM:    * Radio FW Vers  : SWI9X15C_05.05.58.00 r27038 carmd-fwbuild1 2015/03/04 21:30:23
+Jan  1 00:00:15 info udhcpc[1676]: Sending discover...
+Jan  1 00:00:16 notice ALEOS_WAN_MultiSIM: Starting MultiSIM Manager
+Jan  1 00:00:16 err ALEOS_WAN: Error removing br0 IPv6 address ''
+Jan  1 00:00:16 err ALEOS_WAN: Error clearing IPv6 default route
+Jan  1 00:00:16 debug SWI0 SDK Process: >>MM sn or usb [0] 1-1
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:16 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:16 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:17 notice ALEOS_WAN_MultiSIM: Active SIM slot is 1
+Jan  1 00:00:17 notice ALEOS_WAN_MultiSIM: Primary SIM slot is 1
+Jan  1 00:00:17 alert ALEOS_WAN_MultiSIM: Active SIM is slot 1. Reloading configuration
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:17 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:18 debug ALEOS_FIRMWARE_rmswitchingcheck: SDK pid is 2376
+Jan  1 00:00:18 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:18 info udhcpc[1676]: Sending discover...
+Jan  1 00:00:18 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:18 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:18 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:18 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:18 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:18 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Status : 3
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Verify Retries Left : 3
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:18 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: DONE
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Starting RadioRecovery
+Jan  1 00:00:18 notice ALEOS_WAN_RadioRecovery: Radio module recovery completed without taking action
+Jan  1 00:00:19 alert ALEOS_FIRMWARE_SWUpdate: No Radio Module Firmware Update pending
+Jan  1 00:00:20 notice ALEOS_WAN_RMAN: PDPRadioManager::getInstance()
+Jan  1 00:00:20 notice ALEOS_WAN_RMAN: P8Starting::run:	Wait sim ready to launch service/cellradio
+Jan  1 00:00:20 err ALEOS_WAN_RMAN: SetTimeout : New timeout = 2
+Jan  1 00:00:20 notice ALEOS_WAN_RMAN: P15PDPRadioManager::processMSCIID:	launching service/cellradio
+Jan  1 00:00:21 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:21 info udhcpc[1676]: No lease, failing
+Jan  1 00:00:22 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:23 notice ALEOS_WAN: SIM ready after 1 loop(s) - continuing
+Jan  1 00:00:26 notice ALEOS_WAN: Launching RadioTask...
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_SetNewSMSCbk - Failed Registering callback: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:26 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:28 err syslog-ng[198]: Syslog connection failed; fd='33', server='AF_INET(192.168.14.100:6516)', error='No route to host (113)', time_reopen='60'
+Jan  1 00:00:29 notice InitNG: System is starting up.
+Jan  1 00:00:29 notice InitNG: System is up and running!
+Jan  1 00:00:29 alert ALEOS_SERIAL_HIF: Starting HIF
+Jan  1 00:00:29 notice ALEOS_SERIAL_HIF: HIF Init Done
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio is a ALEOS_RADIO_MODULE_MC7304 - GENEU-4G
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio technology type is [2] - [LTE]
+Jan  1 00:00:29 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_INIT
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:29 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:29 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:30 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:31 debug ALEOS_WAN_RadioTask: SDK pid is 4509
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio module power mode is: RADIO_ONLINE
+Jan  1 00:00:31 alert ALEOS_LAN: MTU Source Auto - Set DHCP option 26 MTU: 1430
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:31 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: PIN1 Status : 3
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: PIN1 Verify Retries Left : 3
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: ICCID : 8933201712116527988
+Jan  1 00:00:32 info SWI0 SDK Process: Launching QMI DS shell: service 5(WMS)
+Jan  1 00:00:32 info SWI0 SDK Process: Launching QMI DS shell: service 240(SWIOMA)
+Jan  1 00:00:32 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Jan  1 00:00:32 alert ALEOS_LAN: MTU Source Auto - Ignore Opt 26 MTU size 1500
+Jan  1 00:00:32 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V6 Active WDS Client: V6
+Jan  1 00:00:32 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: cbkTestSetPowerCB - Radio Module Operating Mode: [RADIO_ONLINE]
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_SIM_READY
+Jan  1 00:00:32 info dnsmasq[3801]: started, version 2.55 cachesize 150
+Jan  1 00:00:32 info dnsmasq[3801]: compile time options: IPv6 GNU-getopt no-DBus no-I18N DHCP TFTP
+Jan  1 00:00:32 info dnsmasq-dhcp[3801]: DHCP, IP range 192.168.14.100 -- 192.168.14.100, lease time 1d
+Jan  1 00:00:32 info dnsmasq-dhcp[3801]: DHCP, IP range 192.168.13.100 -- 192.168.13.150, lease time 1d
+Jan  1 00:00:32 warning dnsmasq[3801]: no servers found in /etc/resolv.conf, will retry
+Jan  1 00:00:32 info dnsmasq[3801]: read /etc/hosts - 1 addresses
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Operator  : BYTEL
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_WAITING_ACTIVATION
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_ACTIVATED
+Jan  1 00:00:34 err ALEOS_WAN_RadioTask: Failed to retrieve phone number. Return Code: 1016
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Unable to retrieve phone number, proceeding to next state
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: APN read from Radio Module: internet-entreprise
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: APN selection: internet-entreprise (User Entered)
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Using Primary APN: internet-entreprise
+Jan  1 00:00:34 warning ALEOS_WAN_RadioTask: PopulateBandMasks failed to unlock radio 
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_NOTREADY_WAIT
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: New Serving Operator : 208.20
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Service is available
+Jan  1 00:00:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECT
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:34 notice ALEOS_WAN_linkmon: Network State is now Connecting To Network
+Sep  9 14:56:10 info dnsmasq-dhcp[3801]: DHCPDISCOVER(usb0) da:8a:c8:9e:e9:25 
+Sep  9 14:56:10 info dnsmasq-dhcp[3801]: DHCPOFFER(usb0) 192.168.14.100 da:8a:c8:9e:e9:25 
+Sep  9 14:56:10 info dnsmasq-dhcp[3801]: DHCPREQUEST(usb0) 192.168.14.100 da:8a:c8:9e:e9:25 
+Sep  9 14:56:10 info dnsmasq-dhcp[3801]: DHCPACK(usb0) 192.168.14.100 da:8a:c8:9e:e9:25 FRTLS-EL-ITE221
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: Current time: Sat Jan  1 00:00:34 2000
+Sep  9 14:56:10 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 14:56:10 2016
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: IPPreference : IPv4
+Sep  9 14:56:10 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 14:56:10 debug SWI0 SDK Process: psrwds_starnet:
+Sep  9 14:56:10 debug ALEOS_WAN_RadioTask: iSLQSStartStopDataSession/2765: WDS start interface verbose error: 0
+Sep  9 14:56:10 err ALEOS_WAN_RadioTask: Verbose call end type: 0, verbose call end code: 0
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: cbkPacketSrvStatus - v4SessionID: 1205461496 v6SessionID: 0 state: 2 (CONNECTED) reconfig not required
+Sep  9 14:56:10 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 14:56:10 debug SWI0 SDK Process: psrwds_getsettings:
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECTED
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: Radio interface is [8] - [LTE]
+Sep  9 14:56:10 notice ALEOS_WAN_RadioTask: service type is LTE
+Sep  9 14:56:11 info udhcpc[5374]: udhcpc (v1.14.1) started
+Sep  9 14:56:11 info udhcpc[5374]: Sending discover...
+Sep  9 14:56:11 info udhcpc[5374]: Sending select for 10.174.31.90...
+Sep  9 14:56:11 info udhcpc[5374]: Lease of 10.174.31.90 obtained, lease time 7200
+Sep  9 14:56:11 notice ALEOS_WAN: *** Network Connection successful. WAN IP : 10.174.31.90
+Sep  9 14:56:12 notice ALEOS_WAN: *** IP UP 10.174.31.90 : wwan0
+Sep  9 14:56:12 notice ALEOS_WAN: Setting WWAN MTU size to 1430
+Sep  9 14:56:16 info dnsmasq[3801]: reading /etc/resolv.conf
+Sep  9 14:56:16 info dnsmasq[3801]: using nameserver 62.201.159.99#53
+Sep  9 14:56:16 info dnsmasq[3801]: using nameserver 62.201.129.99#53
+Sep  9 14:56:16 info dnsmasq[3801]: read /etc/hosts - 1 addresses
+Sep  9 14:56:18 notice ALEOS_WAN_linkmon: Current: RSSI=-72, RSRQ=-20, RSRP=-100, SINR=3.4
+Sep  9 14:56:18 notice ALEOS_WAN_linkmon: Network State is now Network Ready
+Sep  9 14:56:18 warning ALEOS_SERIAL_HMC: not in tcp mode current mode 0 
+Sep  9 14:56:52 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '10' seconds, '4' left
+Sep  9 14:57:02 info dropbear[6713]: Child connection from 192.168.14.100:55074
+Sep  9 14:57:03 notice dropbear[6713]: PAM password auth succeeded for 'root' from 192.168.14.100:55074
+Sep  9 14:57:03 info dropbear[6713]: Exit (root): Exited normally
+Sep  9 14:57:04 notice syslog-ng[198]: Syslog connection established; fd='20', server='AF_INET(192.168.14.100:6516)', local='AF_INET(0.0.0.0:0)'
+Sep  9 14:57:05 info dropbear[6747]: Child connection from 192.168.14.100:41637
+Sep  9 14:57:06 notice dropbear[6747]: PAM password auth succeeded for 'root' from 192.168.14.100:41637
+Sep  9 14:57:06 info dropbear[6747]: Exit (root): Exited normally
+Sep  9 14:57:39 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '20' seconds, '3' left
+Sep  9 14:58:35 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '40' seconds, '2' left
+Sep  9 14:59:51 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '80' seconds, '1' left
+Sep  9 15:01:47 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '160' seconds, '0' left
+Sep  9 15:05:04 warning ALEOS_ALMS_LWM2M: Failed bootstrap, nothing left to do
+Sep  9 15:05:41 notice fw_upload_init: 0:Initialization
+Sep  9 15:05:43 notice fw_upload_init: 0:DONE
+Sep  9 15:05:46 info syslog-ng[198]: Log statistics; processed='destination(d_remote)=172', processed='center(received)=530', processed='destination(d_messages)=265', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=172', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=5', stamp='src.internal(s_system#1)=1473433024', processed='center(queued)=702', processed='source(s_system)=265', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=342', processed='global(sdata_updates)=0', processed='source(s_messages)=265', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0', processed='destination(d_system)=265'
+Sep  9 15:05:48 notice ALEOS_FIRMWARE_SWUpdate: > [swpreinstaller] Installation started
+Sep  9 15:05:48 notice ALEOS_FIRMWARE_SWUpdate: [AleosUpdater::open] Verification with Trusted CA /mnt/ro/usr/local/etc/crt/SWI-ESBU-Root-01.crt failed : unable to get local issuer certificate
+Sep  9 15:05:48 notice ALEOS_FIRMWARE_SWUpdate: [AleosUpdater::open] Verification with Trusted CA /mnt/ro/usr/local/etc/crt/SWI-ESBU-Root-02.crt failed : unable to get local issuer certificate
+Sep  9 15:05:59 notice ALEOS_FIRMWARE_SWUpdate: [AleosUpdater::install] ALEOS version : 4.8
+Sep  9 15:05:59 notice ALEOS_FIRMWARE_SWUpdate: > [swpreinstaller] Installation succeeded
+Sep  9 15:06:07 notice InitNG: System is going down.
+Sep  9 15:06:07 info dropbear[389]: Early exit: Terminated by signal
+Sep  9 15:06:07 info dnsmasq[3801]: exiting on receipt of SIGTERM
+Sep  9 15:06:07 crit ALEOS_SYSTEM_STS: STSUpdater: Process received signal 15
+Sep  9 15:06:08 notice ALEOS_WAN: Radio Task still running.. stop quickConnect
+Sep  9 15:06:09 alert ALEOS_SYSTEM: *** Start of last 50 lines in dmesg ***
+Sep  9 15:06:09 notice root: [   13.755617] usb 1-1: GobiSerial converter now attached to ttyUSB1
+Sep  9 15:06:09 notice root: [   13.762672] GobiSerial 1-1:1.3: GobiSerial converter detected
+Sep  9 15:06:09 notice root: [   13.763027] usb 1-1: GobiSerial converter now attached to ttyUSB2
+Sep  9 15:06:09 notice root: [   13.799096] GobiNet 1-1:1.8 wwan0: register 'GobiNet' at usb-ci_hdrc.1-1, GobiNet Ethernet Device, 9a:b1:b5:f0:ab:1c
+Sep  9 15:06:09 notice root: [   13.799118] RawIP mode
+Sep  9 15:06:09 notice root: [   13.817658] USB Speed : USB 2.0
+Sep  9 15:06:09 notice root: [   13.883443] GobiNet 1-1:1.10 wwan1: register 'GobiNet' at usb-ci_hdrc.1-1, GobiNet Ethernet Device, 9a:b1:b5:f0:ab:1c
+Sep  9 15:06:09 notice root: [   13.883464] RawIP mode
+Sep  9 15:06:09 notice root: [   13.902751] USB Speed : USB 2.0
+Sep  9 15:06:09 notice root: [   14.199687] store IGN: 1.1.1
+Sep  9 15:06:09 notice root: [   14.207998] IGN_SYNC: tx_len(6), msg_type(0x2), time_duration(1)
+Sep  9 15:06:09 notice root: [   14.298266] store LVD: 2.1.30.947.1104
+Sep  9 15:06:09 notice root: [   14.317224] LVD_SYNC: tx_len(7), msg_type(0x3), enable(1), time_duration(30)
+Sep  9 15:06:09 notice root: [   14.396131] LVD_SYNC: lt_volt(0x3b3), rt_volt(0x450)
+Sep  9 15:06:09 notice root: [   14.553975] store IO: 4.0.1
+Sep  9 15:06:09 notice root: [   14.558063] IO_SYNC: tx_len(6), msg_type(0x1), enable(0), time_duration(1)
+Sep  9 15:06:09 notice root: [   15.650456] fec 2188000.ethernet eth0: Freescale FEC PHY driver [Atheros 8035 ethernet] (mii_bus:phy_addr=2188000.ethernet:05, irq=-1)
+Sep  9 15:06:09 notice root: [   15.672784] fec_enet_open: fec_enet_private.link(0), phy_device.link(1)
+Sep  9 15:06:09 notice root: [   15.679523] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep  9 15:06:09 notice root: [   15.866883] TE Disabled
+Sep  9 15:06:09 notice root: [   15.935037] creating qcqmi0
+Sep  9 15:06:09 notice root: [   15.963896] TE Disabled
+Sep  9 15:06:09 notice root: [   16.027908] creating qcqmi1
+Sep  9 15:06:09 notice root: [   16.378900] Program 0xB29A into 0x78016
+Sep  9 15:06:09 notice root: [   16.422114] 0x7_8016[0xb29a]
+Sep  9 15:06:09 notice root: [   16.499531] device eth0 entered promiscuous mode
+Sep  9 15:06:09 notice root: [   19.487616] using random self ethernet address
+Sep  9 15:06:09 notice root: [   19.492084] using random host ethernet address
+Sep  9 15:06:09 notice root: [   19.531554] usb0: HOST MAC da:8a:c8:9e:e9:25
+Sep  9 15:06:09 notice root: [   19.532845] usb0: MAC 12:26:32:33:10:49
+Sep  9 15:06:09 notice root: [   19.532907] using random self ethernet address
+Sep  9 15:06:09 notice root: [   19.537370] using random host ethernet address
+Sep  9 15:06:09 notice root: [   19.541872] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008/SWI_2.2
+Sep  9 15:06:09 notice root: [   19.541882] g_ether gadget: g_ether ready
+Sep  9 15:06:09 notice root: [   19.929263] g_ether gadget: high-speed config #2: RNDIS
+Sep  9 15:06:09 notice root: [   24.151180] ISO 9660 Extensions: RRIP_1991A
+Sep  9 15:06:09 notice root: [   40.350754] MCU_UTC_SYNC: (0x8a, 0xcd, 0xd2, 0x57)
+Sep  9 15:06:09 notice root: [   40.355834] store TOD: 3.0.40.20.830.0
+Sep  9 15:06:09 notice root: [   40.362361] kl03z: complete the current CMD (9)
+Sep  9 15:06:09 notice root: [   40.373190] TOD_SYNC: tx_len(7), msg_type(0x4), enable(0), init_offset_highest_bit(0), init_offset_lower_bits(830), init_state(0)
+Sep  9 15:06:09 notice root: [   40.395689] TOD_SYNC: active_window(40), inactive_window(20)
+Sep  9 15:06:09 notice root: [  611.768209] store IGN: 1.1.1800
+Sep  9 15:06:09 notice root: [  611.771708] IGN_SYNC: tx_len(6), msg_type(0x2), time_duration(1800)
+Sep  9 15:06:09 notice root: [  611.792675] store LVD: 2.1.1800.947.1104
+Sep  9 15:06:09 notice root: [  611.802782] LVD_SYNC: tx_len(7), msg_type(0x3), enable(1), time_duration(1800)
+Sep  9 15:06:09 notice root: [  611.810072] LVD_SYNC: lt_volt(0x3b3), rt_volt(0x450)
+Sep  9 15:06:09 notice root: [  624.923999] ISO 9660 Extensions: RRIP_1991A
+Sep  9 15:06:09 notice root: [  637.788414] imx2-wdt 20bc000.wdog: Unexpected close: Expect reboot!
+Sep  9 15:06:09 notice root: [  638.125815] device eth0 left promiscuous mode
+Sep  9 15:06:09 notice root: [  638.125879] br0: port 1(eth0) entered disabled state
+Sep  9 15:06:09 alert ALEOS_SYSTEM: *** End of last 50 lines in dmesg ***
+Sep  9 15:06:09 notice syslog-ng[198]: syslog-ng shutting down; version='3.8.1'
+Jan  1 00:00:00 notice syslog-ng[235]: syslog-ng starting up; version='3.8.1'
+Jan  1 00:00:00 alert ALEOS_SYSTEM:    _   _   _   _   _      
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   / \ / \ / \ / \ / \     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:  | A | L | E | O | S |    
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   \_/ \_/ \_/ \_/ \_/     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Sierra Wireless       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Copyright 2009-2016 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Version: 4.8.0.P24 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Single Code-Set       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM: Serial no: LT53530069011025  
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: Starting AleosConfBuilder
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: Ending AleosConfBuilder Properly
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: START
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: ALEOS time is set to Sat Jan  1 00:00:00 2000
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: END
+Jan  1 00:00:00 info ALEOS_SYSTEM_WDlog: Starting Monitor Process
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: HW Watchdog enabled. 
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: New HW Watchdog timeout: 240 seconds. 
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for SM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Storage Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for CSM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Storage Manager is now ready - Continue
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Configuration Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Initializing...
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Hard-coded default configuration retrieved
+Jan  1 00:00:00 info ALEOS_SYSTEM_CSM: Requesting persisted user configuration...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Data reading done
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Persisted user configuration retrieved
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Persisting default configuration with user configuration...
+Jan  1 00:00:01 info ALEOS_SYSTEM_CSM: Running...
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for LTE Radio
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs Serial Port
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Serial0    Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for GNSS
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: QualcommDM Reserve Status = 0 
+Jan  1 00:00:01 notice ALEOS_SYSTEM_MSCIEn: No External Card Detected
+Jan  1 00:00:01 info ALEOS_SYSTEM: Check Reset Configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM: No reset backup configuration
+Jan  1 00:00:01 info ALEOS_SYSTEM_csmMigrator: csmMigrator: Migration complete.
+Jan  1 00:00:01 notice ALEOS_SYSTEM_Migrator: Already up-to-date
+Jan  1 00:00:02 notice ALEOS_FIRMWARE_SWUpdate: ALEOS Update DONE, reset update flag
+Jan  1 00:00:03 notice ALEOS_SYSTEM: OK
+Jan  1 00:00:04 notice ALEOS_FIRMWARE_Security: SFU Certificates:
+Jan  1 00:00:04 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-01.crt
+Jan  1 00:00:04 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-02.crt
+Jan  1 00:00:04 notice ALEOS_FIRMWARE_Security:   eng.crt
+Jan  1 00:00:04 notice ALEOS_FIRMWARE_Security: => Developement-Signed firmware
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: Linux Syslog (display: No)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: WAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: LAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: VPN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SECURITY log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SERVICES log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: EVENTS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SERIAL log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: APPS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: UI log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: ALMS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: ADMIN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SYSTEM log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: NETSERV log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: FIRMWARE log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: WEB log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: Logging of Log Configuration complete.
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: Starting McuManager
+Jan  1 00:00:06 notice ALEOS_SERVICES_lpmmgr: LpmMgrReadMcuStatus() MCU status 0x5d04
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: 5RvHal power_manager_wakeup_state: Power Manager State:  1.
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: RegisterMcuNotification success
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: ProcessMcuNotification - READY_AND_OPERATIONAL received from MCU on isr [1]
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers: running version: 01.11bc0cea5655b947110430
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers:    file version: 01.11bc0cea5655b947110430
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: No MCU Firmware Download required
+Jan  1 00:00:06 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO2_ANALOG] was entered
+Jan  1 00:00:06 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO3_ANALOG] was entered
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: Configuration of ADC channel sensitivity successful
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: MCU configured properly [1]
+Jan  1 00:00:06 err ALEOS_SYSTEM_Cmdexe: Currently connected to unknown band class :0
+Jan  1 00:00:07 notice ALEOS_SERVICES_McuManager: McuManager start running phase
+Jan  1 00:00:07 warning ALEOS_SERVICES_SMSPROC: File /mnt/hda1/smspwd not found
+Jan  1 00:00:09 notice ALEOS_SYSTEM_STS: Starting STS
+Jan  1 00:00:09 notice ALEOS_WAN_linkmon: dvtFlag=-1.
+Jan  1 00:00:09 warning ALEOS_SERVICES_lpmmgr: LpmMgrAreChecksumsSame() MCU config status 0x3, rewriting configuration
+Jan  1 00:00:11 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:11 info dropbear[434]: Not backgrounding
+Jan  1 00:00:12 alert ALEOS_WAN: IPV4 Disconnect Handled
+Jan  1 00:00:13 notice syslog-ng[235]: Configuration reload request received, reloading configuration;
+Jan  1 00:00:14 warning syslog-ng[235]: Input is valid utf8, but the log message is not tagged as such, this performs worse than enabling validate-utf8 flag on input; value='syslog-ng'
+Jan  1 00:00:14 info udhcpc[1722]: udhcpc (v1.14.1) started
+Jan  1 00:00:14 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:14 notice root: running ALEOS udhcpc_br0 deconfig  to 0.0.0.0
+Jan  1 00:00:14 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:15 info udhcpc[1722]: Sending discover...
+Jan  1 00:00:15 alert ALEOS_SERIAL_HMC: Starting HMC
+Jan  1 00:00:15 alert ALEOS_SYSTEM: Checking Radio Firmware Version
+Jan  1 00:00:15 alert ALEOS_SYSTEM:    * Radio Type     : MC7304
+Jan  1 00:00:16 alert ALEOS_SYSTEM:    * Radio PRI ID   : 9904481
+Jan  1 00:00:16 alert ALEOS_SYSTEM:    * Radio PRI REV  : 05.01
+Jan  1 00:00:17 alert ALEOS_SYSTEM:    * Radio FW Vers  : SWI9X15C_05.05.58.00 r27038 carmd-fwbuild1 2015/03/04 21:30:23
+Jan  1 00:00:18 info udhcpc[1722]: Sending discover...
+Jan  1 00:00:20 err ALEOS_WAN: Error removing br0 IPv6 address ''
+Jan  1 00:00:20 notice ALEOS_WAN_MultiSIM: Starting MultiSIM Manager
+Jan  1 00:00:20 err ALEOS_WAN: Error clearing IPv6 default route
+Jan  1 00:00:21 debug SWI0 SDK Process: >>MM sn or usb [0] 1-1
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:21 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:21 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:21 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:21 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:21 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:21 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:21 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:21 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:21 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:21 info udhcpc[1722]: Sending discover...
+Jan  1 00:00:21 notice ALEOS_WAN_MultiSIM: Active SIM slot is 1
+Jan  1 00:00:21 notice ALEOS_WAN_MultiSIM: Primary SIM slot is 1
+Jan  1 00:00:21 alert ALEOS_WAN_MultiSIM: Active SIM is slot 1. Reloading configuration
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:22 debug ALEOS_FIRMWARE_rmswitchingcheck: SDK pid is 2424
+Jan  1 00:00:22 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:22 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:22 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:22 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:22 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:22 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:22 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Status : 3
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Verify Retries Left : 3
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:22 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:22 notice ALEOS_FIRMWARE_rmswitchingcheck: DONE
+Jan  1 00:00:22 notice ALEOS_WAN_RadioRecovery: Starting RadioRecovery
+Jan  1 00:00:23 notice ALEOS_WAN_RadioRecovery: Radio module recovery completed without taking action
+Jan  1 00:00:23 alert ALEOS_FIRMWARE_SWUpdate: No Radio Module Firmware Update pending
+Jan  1 00:00:24 notice ALEOS_WAN_RMAN: PDPRadioManager::getInstance()
+Jan  1 00:00:24 notice ALEOS_WAN_RMAN: P8Starting::run:	Wait sim ready to launch service/cellradio
+Jan  1 00:00:24 err ALEOS_WAN_RMAN: SetTimeout : New timeout = 2
+Jan  1 00:00:24 notice ALEOS_WAN_RMAN: P15PDPRadioManager::processMSCIID:	launching service/cellradio
+Jan  1 00:00:24 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:24 info udhcpc[1722]: No lease, failing
+Jan  1 00:00:26 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:28 notice ALEOS_WAN: SIM ready after 1 loop(s) - continuing
+Jan  1 00:00:32 notice ALEOS_WAN: Launching RadioTask...
+Jan  1 00:00:32 err ALEOS_WAN_RadioTask: AL_SetNewSMSCbk - Failed Registering callback: 6
+Jan  1 00:00:32 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:32 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:35 notice InitNG: System is starting up.
+Jan  1 00:00:35 notice InitNG: System is up and running!
+Jan  1 00:00:35 alert ALEOS_SERIAL_HIF: Starting HIF
+Jan  1 00:00:35 notice ALEOS_SERIAL_HIF: HIF Init Done
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio is a ALEOS_RADIO_MODULE_MC7304 - GENEU-4G
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio technology type is [2] - [LTE]
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_INIT
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:35 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:35 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:35 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:35 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:35 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:35 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:35 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:35 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:35 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:36 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:36 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:36 alert ALEOS_LAN: MTU Source Auto - Set DHCP option 26 MTU: 1430
+Jan  1 00:00:36 alert ALEOS_LAN: MTU Source Auto - Ignore Opt 26 MTU size 1500
+Jan  1 00:00:37 debug ALEOS_WAN_RadioTask: SDK pid is 4784
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: Radio module power mode is: RADIO_ONLINE
+Jan  1 00:00:37 info dnsmasq[3707]: started, version 2.55 cachesize 150
+Jan  1 00:00:37 info dnsmasq[3707]: compile time options: IPv6 GNU-getopt no-DBus no-I18N DHCP TFTP
+Jan  1 00:00:37 info dnsmasq-dhcp[3707]: DHCP, IP range 192.168.14.100 -- 192.168.14.100, lease time 1d
+Jan  1 00:00:37 info dnsmasq-dhcp[3707]: DHCP, IP range 192.168.13.100 -- 192.168.13.150, lease time 1d
+Jan  1 00:00:37 warning dnsmasq[3707]: no servers found in /etc/resolv.conf, will retry
+Jan  1 00:00:37 info dnsmasq[3707]: read /etc/hosts - 1 addresses
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: PIN1 Status : 3
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: PIN1 Verify Retries Left : 3
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: ICCID : 8933201712116527988
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 5(WMS)
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 240(SWIOMA)
+Jan  1 00:00:37 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Jan  1 00:00:37 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V6 Active WDS Client: V6
+Jan  1 00:00:37 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: cbkTestSetPowerCB - Radio Module Operating Mode: [RADIO_ONLINE]
+Jan  1 00:00:37 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_SIM_READY
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: Operator  : BYTEL
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_WAITING_ACTIVATION
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_ACTIVATED
+Jan  1 00:00:39 err ALEOS_WAN_RadioTask: Failed to retrieve phone number. Return Code: 1016
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: Unable to retrieve phone number, proceeding to next state
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: APN read from Radio Module: internet-entreprise
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: APN selection: internet-entreprise (User Entered)
+Jan  1 00:00:39 notice ALEOS_WAN_RadioTask: Using Primary APN: internet-entreprise
+Jan  1 00:00:40 notice ALEOS_WAN_RadioTask: Customer has selected All Bands
+Jan  1 00:00:40 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_NOTREADY_WAIT
+Jan  1 00:00:40 notice ALEOS_WAN_RadioTask: New Serving Operator : 208.20
+Jan  1 00:00:40 notice ALEOS_WAN_RadioTask: Service is available
+Jan  1 00:00:40 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECT
+Jan  1 00:00:40 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:40 notice ALEOS_WAN_linkmon: Network State is now Connecting To Network
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: Current time: Sat Jan  1 00:00:40 2000
+Sep  9 15:08:13 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 15:08:13 2016
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: IPPreference : IPv4
+Sep  9 15:08:13 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 15:08:13 debug SWI0 SDK Process: psrwds_starnet:
+Sep  9 15:08:13 debug ALEOS_WAN_RadioTask: iSLQSStartStopDataSession/2765: WDS start interface verbose error: 0
+Sep  9 15:08:13 err ALEOS_WAN_RadioTask: Verbose call end type: 0, verbose call end code: 0
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: cbkPacketSrvStatus - v4SessionID: 1205518752 v6SessionID: 0 state: 2 (CONNECTED) reconfig not required
+Sep  9 15:08:13 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep  9 15:08:13 debug SWI0 SDK Process: psrwds_getsettings:
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECTED
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: Radio interface is [8] - [LTE]
+Sep  9 15:08:13 notice ALEOS_WAN_RadioTask: service type is LTE
+Sep  9 15:08:13 info udhcpc[5383]: udhcpc (v1.14.1) started
+Sep  9 15:08:13 info udhcpc[5383]: Sending discover...
+Sep  9 15:08:13 info udhcpc[5383]: Sending select for 10.213.1.93...
+Sep  9 15:08:13 info udhcpc[5383]: Lease of 10.213.1.93 obtained, lease time 7200
+Sep  9 15:08:14 notice ALEOS_WAN: *** Network Connection successful. WAN IP : 10.213.1.93
+Sep  9 15:08:14 notice ALEOS_WAN: *** IP UP 10.213.1.93 : wwan0
+Sep  9 15:08:14 notice ALEOS_WAN: Setting WWAN MTU size to 1430
+Sep  9 15:08:18 info dnsmasq[3707]: reading /etc/resolv.conf
+Sep  9 15:08:18 info dnsmasq[3707]: using nameserver 62.201.159.99#53
+Sep  9 15:08:18 info dnsmasq[3707]: using nameserver 62.201.129.99#53
+Sep  9 15:08:18 info dnsmasq[3707]: read /etc/hosts - 1 addresses
+Sep  9 15:08:21 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-100, SINR=4.4
+Sep  9 15:08:21 notice ALEOS_WAN_linkmon: Network State is now Network Ready
+Sep  9 15:08:21 warning ALEOS_SERIAL_HMC: not in tcp mode current mode 0 
+Sep  9 15:08:22 err ALEOS_WAN: +linknotify[6239] - could not remove lease for usb0 192.168.14.100 .
+Sep  9 15:08:25 info dnsmasq-dhcp[3707]: DHCPDISCOVER(usb0) 3a:59:4b:47:bf:6f 
+Sep  9 15:08:25 info dnsmasq-dhcp[3707]: DHCPOFFER(usb0) 192.168.14.100 3a:59:4b:47:bf:6f 
+Sep  9 15:08:25 info dnsmasq-dhcp[3707]: DHCPREQUEST(usb0) 192.168.14.100 3a:59:4b:47:bf:6f 
+Sep  9 15:08:25 info dnsmasq-dhcp[3707]: DHCPACK(usb0) 192.168.14.100 3a:59:4b:47:bf:6f FRTLS-EL-ITE221
+Sep  9 15:08:27 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '10' seconds, '4' left
+Sep  9 15:08:28 info dropbear[6847]: Child connection from 192.168.14.100:55013
+Sep  9 15:08:29 notice dropbear[6847]: PAM password auth succeeded for 'root' from 192.168.14.100:55013
+Sep  9 15:08:29 info dropbear[6847]: Exit (root): Exited normally
+Sep  9 15:08:38 info dropbear[6952]: Child connection from 192.168.14.100:38496
+Sep  9 15:08:39 notice dropbear[6952]: PAM password auth succeeded for 'root' from 192.168.14.100:38496
+Sep  9 15:08:39 info dropbear[6952]: Exit (root): Exited normally
+Sep  9 15:08:49 notice syslog-ng[235]: Syslog connection established; fd='32', server='AF_INET(192.168.14.100:6516)', local='AF_INET(0.0.0.0:0)'
+Sep  9 15:09:13 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '20' seconds, '3' left
+Sep  9 15:09:50 info dropbear[7844]: Child connection from 192.168.14.100:38907
+Sep  9 15:09:51 notice dropbear[7844]: PAM password auth succeeded for 'root' from 192.168.14.100:38907
+Sep  9 15:09:51 info dropbear[7844]: Exit (root): Exited normally
+Sep  9 15:09:58 info dropbear[7899]: Child connection from 192.168.14.100:44402
+Sep  9 15:09:58 notice dropbear[7899]: PAM password auth succeeded for 'root' from 192.168.14.100:44402
+Sep  9 15:09:59 info dropbear[7899]: Exit (root): Exited normally
+Sep  9 15:10:06 info dropbear[7997]: Child connection from 192.168.14.100:43068
+Sep  9 15:10:06 notice dropbear[7997]: PAM password auth succeeded for 'root' from 192.168.14.100:43068
+Sep  9 15:10:07 info dropbear[7997]: Exit (root): Exited normally
+Sep  9 15:10:10 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '40' seconds, '2' left
+Sep  9 15:11:26 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '80' seconds, '1' left
+Sep  9 15:12:14 info dropbear[9530]: Child connection from 192.168.14.100:50324
+Sep  9 15:12:18 notice dropbear[9530]: PAM password auth succeeded for 'root' from 192.168.14.100:50324
+Sep  9 15:13:22 warning ALEOS_ALMS_LWM2M: Failed bootstrap, retrying in '160' seconds, '0' left
+Sep  9 15:13:58 info dropbear[9530]: Exit (root): Disconnect received
+Sep  9 15:14:01 info dropbear[10950]: Child connection from 192.168.14.100:47010
+Sep  9 15:14:02 notice dropbear[10950]: PAM password auth succeeded for 'root' from 192.168.14.100:47010
+Sep  9 15:14:02 info dropbear[10950]: Exit (root): Exited normally
+Sep  9 15:14:07 info dropbear[11040]: Child connection from 192.168.14.100:33625
+Sep  9 15:14:07 notice dropbear[11040]: PAM password auth succeeded for 'root' from 192.168.14.100:33625
+Sep  9 15:14:07 info dropbear[11040]: Exit (root): Exited normally
+Sep  9 15:16:38 warning ALEOS_ALMS_LWM2M: Failed bootstrap, nothing left to do
+Sep  9 15:17:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=729', processed='center(received)=1572', processed='destination(d_messages)=285', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=729', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=4', stamp='src.internal(s_system#1)=1473433729', processed='center(queued)=1014', processed='source(s_system)=285', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=896', processed='global(sdata_updates)=0', processed='source(s_messages)=1287', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 15:27:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=729', processed='center(received)=1574', processed='destination(d_messages)=286', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=729', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=5', stamp='src.internal(s_system#1)=1473434266', processed='center(queued)=1015', processed='source(s_system)=286', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=898', processed='global(sdata_updates)=0', processed='source(s_messages)=1288', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 15:29:19 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-100, SINR=5.0
+Sep  9 15:37:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=730', processed='center(received)=1578', processed='destination(d_messages)=288', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=730', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=6', stamp='src.internal(s_system#1)=1473434866', processed='center(queued)=1018', processed='source(s_system)=288', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=901', processed='global(sdata_updates)=0', processed='source(s_messages)=1290', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 15:47:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=730', processed='center(received)=1580', processed='destination(d_messages)=289', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=730', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=7', stamp='src.internal(s_system#1)=1473435466', processed='center(queued)=1019', processed='source(s_system)=289', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=903', processed='global(sdata_updates)=0', processed='source(s_messages)=1291', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 15:49:41 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-101, SINR=3.8
+Sep  9 15:54:16 notice ALEOS_WAN_RadioTask: Service is not available
+Sep  9 15:54:16 notice ALEOS_WAN_RadioTask: Service is available
+Sep  9 15:57:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=733', processed='center(received)=1588', processed='destination(d_messages)=293', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=733', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=8', stamp='src.internal(s_system#1)=1473436066', processed='center(queued)=1026', processed='source(s_system)=293', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=910', processed='global(sdata_updates)=0', processed='source(s_messages)=1295', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:07:46 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=733', processed='center(received)=1590', processed='destination(d_messages)=294', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=733', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=9', stamp='src.internal(s_system#1)=1473436666', processed='center(queued)=1027', processed='source(s_system)=294', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=912', processed='global(sdata_updates)=0', processed='source(s_messages)=1296', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:08:17 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 16:08:16 2016
+Sep  9 16:08:17 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 16:08:17 2016
+Sep  9 16:10:07 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-101, SINR=2.0
+Sep  9 16:17:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=735', processed='center(received)=1598', processed='destination(d_messages)=298', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=735', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=10', stamp='src.internal(s_system#1)=1473437266', processed='center(queued)=1033', processed='source(s_system)=298', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=917', processed='global(sdata_updates)=0', processed='source(s_messages)=1300', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:27:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=735', processed='center(received)=1600', processed='destination(d_messages)=299', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=735', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=11', stamp='src.internal(s_system#1)=1473437867', processed='center(queued)=1034', processed='source(s_system)=299', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=919', processed='global(sdata_updates)=0', processed='source(s_messages)=1301', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:32:00 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-101, SINR=4.8
+Sep  9 16:37:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=736', processed='center(received)=1604', processed='destination(d_messages)=301', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=736', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=12', stamp='src.internal(s_system#1)=1473438467', processed='center(queued)=1037', processed='source(s_system)=301', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=922', processed='global(sdata_updates)=0', processed='source(s_messages)=1303', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:47:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=736', processed='center(received)=1606', processed='destination(d_messages)=302', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=736', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=13', stamp='src.internal(s_system#1)=1473439067', processed='center(queued)=1038', processed='source(s_system)=302', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=924', processed='global(sdata_updates)=0', processed='source(s_messages)=1304', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 16:52:23 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-101, SINR=2.6
+Sep  9 16:57:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=737', processed='center(received)=1610', processed='destination(d_messages)=304', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=737', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=14', stamp='src.internal(s_system#1)=1473439667', processed='center(queued)=1041', processed='source(s_system)=304', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=927', processed='global(sdata_updates)=0', processed='source(s_messages)=1306', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 17:07:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=737', processed='center(received)=1612', processed='destination(d_messages)=305', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=737', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=15', stamp='src.internal(s_system#1)=1473440267', processed='center(queued)=1042', processed='source(s_system)=305', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=929', processed='global(sdata_updates)=0', processed='source(s_messages)=1307', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 17:08:17 notice ALEOS_WAN_RadioTask: Current time: Fri Sep  9 17:08:17 2016
+Sep  9 17:08:17 notice Radio Network time used to set both system time and HW clock system time to: Fri Sep  9 17:08:17 2016
+Sep  9 17:13:01 notice ALEOS_WAN_linkmon: Current: RSSI=-71, RSRQ=-20, RSRP=-101, SINR=2.8
+Sep  9 17:17:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=739', processed='center(received)=1620', processed='destination(d_messages)=309', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=739', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=16', stamp='src.internal(s_system#1)=1473440867', processed='center(queued)=1048', processed='source(s_system)=309', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=934', processed='global(sdata_updates)=0', processed='source(s_messages)=1311', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Sep  9 17:27:47 info syslog-ng[235]: Log statistics; processed='destination(d_remote)=739', processed='center(received)=1622', processed='destination(d_messages)=310', dropped='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=739', stored='dst.syslog(d_remote#0,tls,192.168.14.100:6516)=0', processed='src.internal(s_system#1)=17', stamp='src.internal(s_system#1)=1473441467', processed='center(queued)=1049', processed='source(s_system)=310', processed='src.none()=0', stamp='src.none()=0', processed='global(payload_reallocs)=936', processed='global(sdata_updates)=0', processed='source(s_messages)=1312', processed='global(msg_clones)=0', processed='global(internal_queue_length)=0'
+Jan  1 00:00:00 notice syslog-ng[199]: syslog-ng starting up; version='3.8.1'
+Jan  1 00:00:00 alert ALEOS_SYSTEM:    _   _   _   _   _      
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   / \ / \ / \ / \ / \     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:  | A | L | E | O | S |    
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   \_/ \_/ \_/ \_/ \_/     
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Sierra Wireless       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Copyright 2009-2016 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:   Version: 4.8.0.P24 
+Jan  1 00:00:00 alert ALEOS_SYSTEM:     Single Code-Set       
+Jan  1 00:00:00 alert ALEOS_SYSTEM:                           
+Jan  1 00:00:00 alert ALEOS_SYSTEM: Serial no: LT53530069011025  
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: START
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: ALEOS time is set to Sat Jan  1 00:00:00 2000
+Jan  1 00:00:00 alert ALEOS_SYSTEM_startup: END
+Jan  1 00:00:00 info ALEOS_SYSTEM_WDlog: Starting Monitor Process
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: HW Watchdog enabled. 
+Jan  1 00:00:00 notice ALEOS_SYSTEM_WDlog: New HW Watchdog timeout: 240 seconds. 
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for SM to be Ready...
+Jan  1 00:00:00 notice ALEOS_SYSTEM: Starting Storage Manager...
+Jan  1 00:00:00 info ALEOS_SYSTEM: Waiting for CSM to be Ready...
+Jan  1 00:00:00 warning ALEOS_SYSTEM_SM: Resetting bad container: 'Config11.smc' 
+Jan  1 00:00:00 warning ALEOS_SYSTEM_SM: Write header for 'Config11.smc', status:'0'
+Jan  1 00:00:01 warning ALEOS_SYSTEM_SM: Error handler corrected for container 'Config11.smc', health:'5' 
+Jan  1 00:00:01 notice ALEOS_SYSTEM: Storage Manager is now ready - Continue
+Jan  1 00:00:01 notice ALEOS_SYSTEM: Starting Configuration Manager...
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Initializing...
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Hard-coded default configuration retrieved
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Requesting persisted user configuration...
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Data reading done
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Persisted user configuration retrieved
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Default configuration already peristed in user configuration
+Jan  1 00:00:02 info ALEOS_SYSTEM_CSM: Running...
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for LTE Radio
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs Serial Port
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: Serial0    Reserve Status = 0 
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: Enabling MSCIIDs for GNSS
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: QualcommDM Reserve Status = 0 
+Jan  1 00:00:03 notice ALEOS_SYSTEM_MSCIEn: No External Card Detected
+Jan  1 00:00:03 info ALEOS_SYSTEM: Check Reset Configuration
+Jan  1 00:00:03 info ALEOS_SYSTEM: No reset backup configuration
+Jan  1 00:00:03 info ALEOS_SYSTEM_csmMigrator: csmMigrator: Migration complete.
+Jan  1 00:00:03 notice ALEOS_SYSTEM_Migrator: Already up-to-date
+Jan  1 00:00:03 notice ALEOS_FIRMWARE_Security: SFU Certificates:
+Jan  1 00:00:03 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-01.crt
+Jan  1 00:00:03 notice ALEOS_FIRMWARE_Security:   SWI-ESBU-Root-02.crt
+Jan  1 00:00:03 notice ALEOS_FIRMWARE_Security:   eng.crt
+Jan  1 00:00:03 notice ALEOS_FIRMWARE_Security: => Developement-Signed firmware
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: Linux Syslog (display: No)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: WAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: LAN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: VPN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SECURITY log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SERVICES log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: EVENTS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SERIAL log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: APPS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: UI log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: ALMS log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: ADMIN log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: SYSTEM log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: NETSERV log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: FIRMWARE log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: WEB log level --> ALEOS_NOTICE (display: Yes)
+Jan  1 00:00:04 alert ALEOS_ADMIN_logLogCfg: Logging of Log Configuration complete.
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: Starting McuManager
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: 5RvHal power_manager_wakeup_state: Power Manager State:  1.
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: RegisterMcuNotification success
+Jan  1 00:00:05 notice ALEOS_SERVICES_lpmmgr: LpmMgrReadMcuStatus() MCU status 0x5d04
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: ProcessMcuNotification - READY_AND_OPERATIONAL received from MCU on isr [1]
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers: running version: 01.11bc0cea5655b947110430
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: 5RvHal download_mcu_image: Headers:    file version: 01.11bc0cea5655b947110430
+Jan  1 00:00:05 notice ALEOS_SERVICES_McuManager: No MCU Firmware Download required
+Jan  1 00:00:05 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO2_ANALOG] was entered
+Jan  1 00:00:05 err ALEOS_SERVICES_McuManager: 5RvHal set_adc_sensitivity: Invalid logical channel [ADC_LOGICAL_IO3_ANALOG] was entered
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: Configuration of ADC channel sensitivity successful
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: MCU configured properly [1]
+Jan  1 00:00:06 err ALEOS_SYSTEM_Cmdexe: Currently connected to unknown band class :0
+Jan  1 00:00:06 warning ALEOS_SERVICES_SMSPROC: File /mnt/hda1/smspwd not found
+Jan  1 00:00:06 notice ALEOS_SERVICES_McuManager: McuManager start running phase
+Jan  1 00:00:08 notice ALEOS_WAN_linkmon: dvtFlag=-1.
+Jan  1 00:00:08 notice ALEOS_SYSTEM_STS: Starting STS
+Jan  1 00:00:09 warning ALEOS_SERVICES_lpmmgr: LpmMgrAreChecksumsSame() MCU config status 0x3, rewriting configuration
+Jan  1 00:00:10 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:10 info dropbear[411]: Not backgrounding
+Jan  1 00:00:11 notice syslog-ng[199]: Configuration reload request received, reloading configuration;
+Jan  1 00:00:11 alert ALEOS_WAN: IPV4 Disconnect Handled
+Jan  1 00:00:12 alert ALEOS_SERIAL_HMC: Starting HMC
+Jan  1 00:00:12 warning syslog-ng[199]: Input is valid utf8, but the log message is not tagged as such, this performs worse than enabling validate-utf8 flag on input; value='syslog-ng'
+Jan  1 00:00:12 info udhcpc[1767]: udhcpc (v1.14.1) started
+Jan  1 00:00:12 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:13 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:13 notice root: running ALEOS udhcpc_br0 deconfig  to 0.0.0.0
+Jan  1 00:00:13 info udhcpc[1767]: Sending discover...
+Jan  1 00:00:13 alert ALEOS_SYSTEM: Checking Radio Firmware Version
+Jan  1 00:00:13 alert ALEOS_SYSTEM:    * Radio Type     : MC7304
+Jan  1 00:00:13 alert ALEOS_SYSTEM:    * Radio PRI ID   : 9904481
+Jan  1 00:00:14 alert ALEOS_SYSTEM:    * Radio PRI REV  : 05.01
+Jan  1 00:00:15 alert ALEOS_SYSTEM:    * Radio FW Vers  : SWI9X15C_05.05.58.00 r27038 carmd-fwbuild1 2015/03/04 21:30:23
+Jan  1 00:00:16 info udhcpc[1767]: Sending discover...
+Jan  1 00:00:17 notice ALEOS_WAN_MultiSIM: Starting MultiSIM Manager
+Jan  1 00:00:17 err ALEOS_WAN: Error removing br0 IPv6 address ''
+Jan  1 00:00:17 err ALEOS_WAN: Error clearing IPv6 default route
+Jan  1 00:00:17 debug SWI0 SDK Process: >>MM sn or usb [0] 1-1
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:17 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:17 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:17 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:17 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:17 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:17 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:18 notice ALEOS_WAN_MultiSIM: Active SIM slot is 1
+Jan  1 00:00:18 notice ALEOS_WAN_MultiSIM: Primary SIM slot is 1
+Jan  1 00:00:18 alert ALEOS_WAN_MultiSIM: Active SIM is slot 1. Reloading configuration
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:18 notice ALEOS_FIRMWARE_rmswitchingcheck: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:19 debug ALEOS_FIRMWARE_rmswitchingcheck: SDK pid is 2432
+Jan  1 00:00:19 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:19 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:19 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:19 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:19 debug SWI0 SDK Process: swi_ossdk_readdir
+Jan  1 00:00:19 debug SWI0 SDK Process: fmsExtractParameter: File Name: /tmp/rmswichingcheck/1//9999999_9902674_SWI9X15C_05.05.58.00_00_GENEU-4G_005.026_000-field.spk
+Jan  1 00:00:19 info udhcpc[1767]: Sending discover...
+Jan  1 00:00:19 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Status : 3
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Verify Retries Left : 3
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: ****************************************
+Jan  1 00:00:19 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:19 notice ALEOS_FIRMWARE_rmswitchingcheck: DONE
+Jan  1 00:00:19 notice ALEOS_WAN_RadioRecovery: Starting RadioRecovery
+Jan  1 00:00:20 notice ALEOS_WAN_RadioRecovery: Radio module recovery completed without taking action
+Jan  1 00:00:20 alert ALEOS_FIRMWARE_SWUpdate: No Radio Module Firmware Update pending
+Jan  1 00:00:21 notice ALEOS_WAN_RMAN: PDPRadioManager::getInstance()
+Jan  1 00:00:21 notice ALEOS_WAN_RMAN: P8Starting::run:	Wait sim ready to launch service/cellradio
+Jan  1 00:00:21 err ALEOS_WAN_RMAN: SetTimeout : New timeout = 2
+Jan  1 00:00:21 notice ALEOS_WAN_RMAN: P15PDPRadioManager::processMSCIID:	launching service/cellradio
+Jan  1 00:00:22 notice root: running ALEOS udhcpc_br0
+Jan  1 00:00:22 info udhcpc[1767]: No lease, failing
+Jan  1 00:00:23 alert ALEOS_WAN: Radio Enumerated Successfully
+Jan  1 00:00:25 notice ALEOS_WAN: SIM ready after 1 loop(s) - continuing
+Jan  1 00:00:28 notice ALEOS_WAN: Launching RadioTask...
+Jan  1 00:00:28 err ALEOS_WAN_RadioTask: AL_SetNewSMSCbk - Failed Registering callback: 6
+Jan  1 00:00:28 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:28 err ALEOS_WAN_RadioTask: AL_process_stored_sms Error onn SLQSGetSMSList Code: 6
+Jan  1 00:00:29 err syslog-ng[199]: Syslog connection failed; fd='33', server='AF_INET(192.168.14.100:6516)', error='No route to host (113)', time_reopen='60'
+Jan  1 00:00:31 notice InitNG: System is starting up.
+Jan  1 00:00:31 notice InitNG: System is up and running!
+Jan  1 00:00:31 alert ALEOS_SERIAL_HIF: Starting HIF
+Jan  1 00:00:31 notice ALEOS_SERIAL_HIF: HIF Init Done
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio is a ALEOS_RADIO_MODULE_MC7304 - GENEU-4G
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio technology type is [2] - [LTE]
+Jan  1 00:00:31 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_INIT
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB0 device found on USB Interface 0
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB1 device found on USB Interface 2
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:31 debug SWI0 SDK Process: ttyUSB2 device found on USB Interface 3
+Jan  1 00:00:31 debug SWI0 SDK Process: swi_ossdkusbscan/1481: 3 tty interfaces successfully scanned
+Jan  1 00:00:31 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:31 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:31 debug SWI0 SDK Process: qcqmi0 device found on USB Interface 8
+Jan  1 00:00:31 debug SWI0 SDK Process: qcqmi1 device found on USB Interface 10
+Jan  1 00:00:31 debug SWI0 SDK Process: swi_ossdkusbscan/1507: 2 qmi interfaces successfully scanned
+Jan  1 00:00:31 debug SWI0 SDK Process: swi_ossdkusbscan/1519: 5/6 interfaces successfully scanned
+Jan  1 00:00:31 debug SWI0 SDK Process: swi_ossdkusbscan: drivers ready!
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Waiting for the Radio Module to be ready
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: (qmisdkhelper) Radio module is ready
+Jan  1 00:00:32 debug ALEOS_WAN_RadioTask: SDK pid is 4577
+Jan  1 00:00:32 info SWI0 SDK Process: Launching QMI DS shell: service 2(DMS)
+Jan  1 00:00:32 notice ALEOS_WAN_RadioTask: Radio module power mode is: RADIO_ONLINE
+Jan  1 00:00:33 alert ALEOS_LAN: MTU Source Auto - Set DHCP option 26 MTU: 1430
+Jan  1 00:00:33 alert ALEOS_LAN: MTU Source Auto - Ignore Opt 26 MTU size 1500
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 3(NAS)
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 11(UIM)
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: PIN1 Status : 3
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: PIN1 Verify Retries Left : 3
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: PIN1 Unblock Retries Left : 10
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: ****************************************
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: ICCID : 8933201712116527988
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 5(WMS)
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 240(SWIOMA)
+Jan  1 00:00:33 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Jan  1 00:00:33 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V6 Active WDS Client: V6
+Jan  1 00:00:33 info SWI0 SDK Process: Launching QMI DS shell: service 1(WDS)
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: cbkTestSetPowerCB - Radio Module Operating Mode: [RADIO_ONLINE]
+Jan  1 00:00:33 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_SIM_READY
+Jan  1 00:00:33 info dnsmasq[3839]: started, version 2.55 cachesize 150
+Jan  1 00:00:33 info dnsmasq[3839]: compile time options: IPv6 GNU-getopt no-DBus no-I18N DHCP TFTP
+Jan  1 00:00:33 info dnsmasq-dhcp[3839]: DHCP, IP range 192.168.14.100 -- 192.168.14.100, lease time 1d
+Jan  1 00:00:33 info dnsmasq-dhcp[3839]: DHCP, IP range 192.168.13.100 -- 192.168.13.150, lease time 1d
+Jan  1 00:00:33 warning dnsmasq[3839]: no servers found in /etc/resolv.conf, will retry
+Jan  1 00:00:33 info dnsmasq[3839]: read /etc/hosts - 1 addresses
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Operator  : BYTEL
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_WAITING_ACTIVATION
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_ACTIVATED
+Jan  1 00:00:35 err ALEOS_WAN_RadioTask: Failed to retrieve phone number. Return Code: 1016
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Unable to retrieve phone number, proceeding to next state
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: APN read from Radio Module: internet-entreprise
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: APN selection: internet-entreprise (User Entered)
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Using Primary APN: internet-entreprise
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Customer has selected All Bands
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_NOTREADY_WAIT
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: New Serving Operator : 208.20
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Service is available
+Jan  1 00:00:35 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECT
+Jan  1 00:00:35 notice ALEOS_WAN_linkmon: Current: RSSI=-125, RSRQ=-20, RSRP=-140, SINR=0.0
+Jan  1 00:00:35 notice ALEOS_WAN_linkmon: Network State is now Connecting To Network
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: Current time: Sat Jan  1 00:00:35 2000
+Sep 12 08:52:34 notice Radio Network time used to set both system time and HW clock system time to: Mon Sep 12 08:52:34 2016
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: IPPreference : IPv4
+Sep 12 08:52:34 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep 12 08:52:34 debug SWI0 SDK Process: psrwds_starnet:
+Sep 12 08:52:34 debug ALEOS_WAN_RadioTask: iSLQSStartStopDataSession/2765: WDS start interface verbose error: 0
+Sep 12 08:52:34 err ALEOS_WAN_RadioTask: Verbose call end type: 0, verbose call end code: 0
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: cbkPacketSrvStatus - v4SessionID: 1138149096 v6SessionID: 0 state: 2 (CONNECTED) reconfig not required
+Sep 12 08:52:34 debug SWI0 SDK Process: psrwds_setipfamily: instance: 0 IP family: V4 Active WDS Client: V4
+Sep 12 08:52:34 debug SWI0 SDK Process: psrwds_getsettings:
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: IMSI : 208201711652798
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: Radio_state --> RADIO_STATE_CONNECTED
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: Radio interface is [8] - [LTE]
+Sep 12 08:52:34 notice ALEOS_WAN_RadioTask: service type is LTE
+Sep 12 08:52:34 info udhcpc[5321]: udhcpc (v1.14.1) started
+Sep 12 08:52:34 info udhcpc[5321]: Sending discover...
+Sep 12 08:52:34 info udhcpc[5321]: Sending select for 10.212.3.151...
+Sep 12 08:52:34 info udhcpc[5321]: Lease of 10.212.3.151 obtained, lease time 7200
+Sep 12 08:52:35 notice ALEOS_WAN: *** Network Connection successful. WAN IP : 10.212.3.151
+Sep 12 08:52:35 notice ALEOS_WAN: *** IP UP 10.212.3.151 : wwan0
+Sep 12 08:52:35 notice ALEOS_WAN: Setting WWAN MTU size to 1430
+Sep 12 08:52:39 info dnsmasq[3839]: reading /etc/resolv.conf
+Sep 12 08:52:39 info dnsmasq[3839]: using nameserver 62.201.159.99#53
+Sep 12 08:52:39 info dnsmasq[3839]: using nameserver 62.201.129.99#53
+Sep 12 08:52:39 info dnsmasq[3839]: read /etc/hosts - 1 addresses
+Sep 12 08:52:41 err ALEOS_WAN: +linknotify[6098] - could not remove lease for usb0 192.168.14.100 .
+Sep 12 08:52:42 notice ALEOS_WAN_linkmon: Current: RSSI=-72, RSRQ=-20, RSRP=-100, SINR=1.2
+Sep 12 08:52:42 notice ALEOS_WAN_linkmon: Network State is now Network Ready
+Sep 12 08:52:42 warning ALEOS_SERIAL_HMC: not in tcp mode current mode 0 
+Sep 12 08:52:43 info dnsmasq-dhcp[3839]: DHCPDISCOVER(usb0) 6a:b3:ad:c2:30:0c 
+Sep 12 08:52:43 info dnsmasq-dhcp[3839]: DHCPOFFER(usb0) 192.168.14.100 6a:b3:ad:c2:30:0c 
+Sep 12 08:52:43 info dnsmasq-dhcp[3839]: DHCPREQUEST(usb0) 192.168.14.100 6a:b3:ad:c2:30:0c 
+Sep 12 08:52:43 info dnsmasq-dhcp[3839]: DHCPACK(usb0) 192.168.14.100 6a:b3:ad:c2:30:0c FRTLS-EL-ITE221
+Sep 12 08:52:49 info dropbear[6750]: Child connection from 192.168.14.100:49838
+Sep 12 08:52:50 notice dropbear[6750]: PAM password auth succeeded for 'root' from 192.168.14.100:49838
+Sep 12 08:52:50 info dropbear[6750]: Exit (root): Exited normally
+Sep 12 08:53:03 info dropbear[6917]: Child connection from 192.168.14.100:42697
+Sep 12 08:53:03 notice dropbear[6917]: PAM password auth succeeded for 'root' from 192.168.14.100:42697

@@ -1,0 +1,79 @@
+Index: src/initng_active_db.c
+===================================================================
+--- src/initng_active_db.c
++++ src/initng_active_db.c
+@@ -199,6 +199,9 @@ active_db_h *initng_active_db_find_by_pi
+ 		currentP = NULL;
+ 		while_processes(currentP, currentA)
+ 		{
++			if (currentP->pst != P_ACTIVE)
++				continue;
++
+ 			if (currentP->pid == pid)
+ 				return (currentA);
+ 		}
+Index: plugins/stcmd/initng_stcmd.c
+===================================================================
+--- plugins/stcmd/initng_stcmd.c
++++ plugins/stcmd/initng_stcmd.c
+@@ -200,6 +200,9 @@ static int cmd_get_pid_of(char *arg)
+ 	/* browse all processes */
+ 	while_processes(process, apt)
+ 	{
++		if (process->pst != P_ACTIVE)
++			continue;
++
+ 		/* return the first process found */
+ 		return (process->pid);
+ 	}
+@@ -264,24 +267,38 @@ static int cmd_restart(char *arg)
+ 	}
+ 
+ 	apt = initng_active_db_find_in_name(arg);
+-	if (!apt)
++	if (apt)
+ 	{
+-		return (FALSE);
+-		F_("Service \"%s\" not found.\n", arg);
++		D_("removing service data for %s, to make sure .ii file is reloaded!\n", arg);
++#ifdef SERVICE_CACHE
++		if (apt->from_service)
++		{
++			list_del(&apt->from_service->list);
++			initng_service_cache_free(apt->from_service);
++		}
++#endif
++
++		if (IS_UP(apt))
++		{
++			/* Try restart this service */
++			D_("Restarting service %s\n", apt->name);
++			return (initng_handler_restart_service(apt));
++		}
++
++		/* Try start this service */
++		D_("Starting service %s\n", apt->name);
++		return (initng_handler_start_service(apt));
+ 	}
+ 
+-	D_("removing service data for %s, to make sure .ii file is reloaded!\n",
+-	   arg);
+-#ifdef SERVICE_CACHE
+-	if (apt->from_service)
++	/* Try start this service */
++	apt = initng_handler_start_new_service_named(arg);
++	if (!apt)
+ 	{
+-		list_del(&apt->from_service->list);
+-		initng_service_cache_free(apt->from_service);
++		F_("Service \"%s\" not found.\n", arg);
++		return (FALSE);
+ 	}
+-#endif
+ 
+-	D_("Restarting service %s\n", apt->name);
+-	return (initng_handler_restart_service(apt));
++	return (TRUE);
+ }
+ 
+ 

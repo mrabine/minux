@@ -1,0 +1,8 @@
+net/lo
+system/getty
+system/hostname
+system/modules/depmod
+system/modules
+system/mountfs
+system/swap
+system/urandom

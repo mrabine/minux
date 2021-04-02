@@ -1,0 +1,9 @@
+HOST_FAKEROOT_VERSION = 1.18.4
+HOST_FAKEROOT_SOURCE = host-fakeroot-$(HOST_FAKEROOT_VERSION)
+HOST_FAKEROOT_ARCHIVE = fakeroot_$(HOST_FAKEROOT_VERSION).orig.tar.bz2
+HOST_FAKEROOT_PATCH = 
+HOST_FAKEROOT_DEPENDENCIES = 
+
+$(eval $(add-host-autotools-package))
+
+FAKEROOT = $(HOST_DIR)/usr/bin/fakeroot

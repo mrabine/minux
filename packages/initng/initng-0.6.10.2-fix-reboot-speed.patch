@@ -1,0 +1,12 @@
+diff -rupN /tmp/initng-0.6.10.2/src/initng_depend.c ./src/initng_depend.c
+--- /tmp/initng-0.6.10.2/src/initng_depend.c	2016-07-13 18:59:39.714966000 +0200
++++ ./src/initng_depend.c	2016-07-18 18:02:01.518349396 +0200
+@@ -211,7 +211,7 @@ int initng_depend_stop_deps(active_db_h
+ 			continue;
+ 
+ 		/* if current depends on the one we are stopping */
+-		if (initng_depend_deep(current, service) == TRUE)
++		if (initng_depend(current, service) == TRUE)
+ 			initng_handler_stop_service(current);
+ 	}
+ 

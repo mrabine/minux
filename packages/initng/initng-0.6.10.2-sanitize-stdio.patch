@@ -1,0 +1,88 @@
+diff -rupN /tmp/initng-0.6.10.2/src/main.c ./src/main.c
+--- /tmp/initng-0.6.10.2/src/main.c	2017-01-16 14:58:36.269573492 +0100
++++ ./src/main.c	2017-01-16 14:52:10.721580000 +0100
+@@ -272,6 +272,25 @@ static int load_policy(int *enforce)
+ }
+ #endif
+ 
++static void sanitize_stdio(void)
++{
++	int fd;
++
++	fd = open("/dev/null", O_RDWR);
++	if (fd < 0)
++	{
++		F_("Failed to sanitize stdio.\r\n");
++		initng_main_su_login();
++	}
++
++	// Make sure fd 0, 1 and 2 won't be used by future open.
++	while (fd < 2)
++		fd = dup(fd);
++
++	// Close /dev/null if necessary.
++	if (fd > 2)
++		(void) close(fd);
++}
+ 
+ static void setup_console(void)
+ {
+@@ -290,7 +309,6 @@ static void setup_console(void)
+ 	/* set console loglevel */
+ 	klogctl(8, NULL, 1);
+ 
+-
+ 	/* enable generation of core files */
+ 	{
+ 		struct rlimit c = { 1000000, 1000000 };
+@@ -309,30 +327,15 @@ static void setup_console(void)
+ 		fd = open(INITNG_CONSOLE, O_RDWR | O_NOCTTY);
+ 	}
+ 
+-	/* Try to open the console, but don't control it */
+-	if (fd > 0)
++	if (fd < 0)
+ 	{
+-		D_("Opened " INITNG_CONSOLE ". Setting terminal options.\r\n");
+-		ioctl(fd, KDSIGACCEPT, SIGWINCH);	/* Accept signals from 'kbd' */
+-		close(fd);							/* Like Ctrl + Alt + Delete signal? */
+-	}
+-	else
+-	{
+-		D_("Failed to open " INITNG_CONSOLE ". Setting options anyway.\r\n");
+-		ioctl(0, KDSIGACCEPT, SIGWINCH);	/* Accept signals from 'kbd' */
++		F_("Failed to open the console.\r\n");
++		sanitize_stdio();
++		return;
+ 	}
+ 
+-	/* TODO: this block may be incorrect or incomplete */
+-	/* Q: What does this block really do? */
+-
+-	/*
+-	 * TODO: /dev/console may still be open from before. Also, if it
+-	 * fails to open, why try to finish the block?
+-	 */
+-	if ((fd = open("/dev/console", O_RDWR | O_NOCTTY)) < 0)
+-	{
+-		F_("main(): can't open /dev/console.\r\n");
+-	}
++	/* Accept signals from 'kbd' */
++	ioctl(fd, KDSIGACCEPT, SIGWINCH);
+ 
+ 	(void) tcgetattr(fd, &tty);
+ 
+@@ -364,8 +367,12 @@ static void setup_console(void)
+ 	 */
+ 	(void) tcsetattr(fd, TCSANOW, &tty);
+ 	(void) tcflush(fd, TCIOFLUSH);
+-	(void) close(fd);
+ 
++	(void) dup2(fd, STDIN_FILENO);
++	(void) dup2(fd, STDOUT_FILENO);
++	(void) dup2(fd, STDERR_FILENO);
++
++	(void) close(fd);
+ }
+ 
+ 

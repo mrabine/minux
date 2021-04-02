@@ -1,0 +1,9 @@
+# Dorale System, Inc.
+#
+# This is the PAM configuration file for sshd.
+#
+# Copyright (C) 2016 Dorale System, Inc.
+#
+auth     required pam_unix.so     
+account  required pam_unix.so
+session  required pam_unix.so
